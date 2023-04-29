@@ -1,7 +1,8 @@
+import Table from "./components/Table/Table";
 import "./scss/styles.scss";
 
 function App() {
-    return <div className="app">Hello World</div>;
+    return <Table />;
 }
 
 export default App;

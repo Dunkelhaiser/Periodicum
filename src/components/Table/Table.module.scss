@@ -1,0 +1,19 @@
+.periodic_table {
+    display: grid;
+    grid-gap: 0.625rem;
+    grid-template-columns: repeat(18, 70px);
+    grid-template-rows: repeat(7, 70px);
+    justify-content: center;
+}
+
+.empty {
+    &:nth-child(1) {
+        grid-column: 2 / span 16;
+        grid-row: 1;
+    }
+
+    &:nth-child(2) {
+        grid-column: 3 / span 10;
+        grid-row: 1/4;
+    }
+}

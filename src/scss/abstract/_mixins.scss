@@ -5,3 +5,15 @@
     align-items: $align;
     justify-content: $justify;
 }
+
+@mixin background-gradient($color1, $color2) {
+    background: linear-gradient(to bottom right, $color1 0%, $color2 100%);
+}
+
+@mixin text-gradient($color1, $color2) {
+    background: linear-gradient($color1, $color2);
+    /* stylelint-disable-next-line property-no-vendor-prefix */
+    -webkit-background-clip: text;
+
+    -webkit-text-fill-color: transparent;
+}

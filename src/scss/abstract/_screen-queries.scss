@@ -1,0 +1,23 @@
+@mixin respond-phone {
+    @media (max-width: 600px) {
+        @content;
+    }
+}
+
+@mixin respond-tablet {
+    @media (max-width: 900px) {
+        @content;
+    }
+}
+
+@mixin respond-tablet-landscape {
+    @media (max-width: 1200px) {
+        @content;
+    }
+}
+
+@mixin respond-pc-large {
+    @media (min-width: 1800px) {
+        @content;
+    }
+}

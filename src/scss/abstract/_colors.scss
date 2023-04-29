@@ -1,0 +1,13 @@
+:root {
+    --background: #f7f7f7;
+    --foreground: #f9f9f9;
+    --text: #292d36;
+    --light-shadow: rgba(149 157 165 / 5%);
+}
+
+html[data-theme="dark"] {
+    --background: #22252d;
+    --foreground: #292d36;
+    --text: #f9f9f9;
+    --dark-shadow: rgba(32 37 41 / 20%);
+}

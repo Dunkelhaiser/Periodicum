@@ -11,6 +11,7 @@
         "scss/dollar-variable-empty-line-before": null,
         "scss/at-extend-no-missing-placeholder": null
     },
+    "ignoreFiles": ["node_modules/**", "dist/**", "vite.config.ts", "**/**.ts"],
     "overrides": [
         {
             "files": ["**/*.scss"],

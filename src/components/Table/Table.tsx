@@ -8,6 +8,8 @@ const Table: React.FC = () => {
         <div className={TableStyles.periodic_table}>
             <div className={TableStyles.empty} />
             <div className={TableStyles.empty} />
+            <div className={TableStyles.empty} />
+            <div className={TableStyles.empty} />
             {data.map(
                 (element) =>
                     (element.number < 57 || element.number >= 71) &&
@@ -22,6 +24,21 @@ const Table: React.FC = () => {
                         />
                     )
             )}
+            <div className={TableStyles.second_row}>
+                {data.map(
+                    (element) =>
+                        ((element.number >= 57 && element.number <= 70) || (element.number >= 89 && element.number <= 102)) && (
+                            <Element
+                                key={uuid()}
+                                symbol={element.symbol}
+                                name={element.name}
+                                number={element.number}
+                                atomicMass={Math.round(element.atomicMass * 1e3) / 1e3}
+                                color={element.block as "s" | "p" | "d" | "f"}
+                            />
+                        )
+                )}
+            </div>
         </div>
     );
 };

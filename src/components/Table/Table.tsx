@@ -1,9 +1,30 @@
+import { useContext } from "react";
 import { v4 as uuid } from "uuid";
 import TableStyles from "./Table.module.scss";
 import Element from "../Element/Element";
 import data from "../../data1.json";
+import { OptionsContext } from "../../context/OptionsContext";
 
 const Table: React.FC = () => {
+    const { visibility } = useContext(OptionsContext);
+
+    const isVisible = (category: string, phase: string) => {
+        return (
+            ((category === "nonmetal" || category === "halogen" || category === "noble gas") && !visibility.nonmetal) ||
+            ((category === "alkali metal" ||
+                category === "alkaline earth metal" ||
+                category === "post-transition metal" ||
+                category === "transition metal" ||
+                category === "metalloid" ||
+                category === "lanthanide" ||
+                category === "actinide") &&
+                !visibility.metal) ||
+            (phase === "Solid" && !visibility.solid) ||
+            (phase === "Liquid" && !visibility.liquid) ||
+            (phase === "Gas" && !visibility.gas)
+        );
+    };
+
     return (
         <div className={TableStyles.periodic_table}>
             <div className={TableStyles.empty} />
@@ -21,6 +42,7 @@ const Table: React.FC = () => {
                             number={element.number}
                             atomicMass={Math.round(element.atomicMass * 1e3) / 1e3}
                             color={element.block as "s" | "p" | "d" | "f"}
+                            disabled={isVisible(element.category, element.phase)}
                         />
                     )
             )}
@@ -35,6 +57,7 @@ const Table: React.FC = () => {
                                 number={element.number}
                                 atomicMass={Math.round(element.atomicMass * 1e3) / 1e3}
                                 color={element.block as "s" | "p" | "d" | "f"}
+                                disabled={isVisible(element.category, element.phase)}
                             />
                         )
                 )}

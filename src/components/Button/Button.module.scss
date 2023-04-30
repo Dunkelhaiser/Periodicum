@@ -1,0 +1,64 @@
+.button {
+    cursor: pointer;
+
+    padding: 0.5em 1.5em;
+
+    font-weight: 700;
+
+    border: 0.15em solid var(--color);
+    border-radius: 0.5em;
+
+    transition: var(--hover);
+}
+
+.primary {
+    --color: var(--button);
+    --color-hover: var(--button-hover);
+    --color-active: var(--button-active);
+    --color-text: var(--text);
+}
+
+.normal {
+    color: var(--color-text);
+    background-color: var(--color);
+
+    &:hover,
+    &:focus-visible {
+        background-color: var(--color-hover);
+    }
+
+    &:active {
+        background-color: var(--color-active);
+    }
+}
+
+.outline {
+    font-weight: 700;
+    color: var(--color-text);
+    background-color: transparent;
+
+    &:hover,
+    &:focus-visible {
+        border-color: var(--color-hover);
+    }
+
+    &:active {
+        border-color: var(--color-active);
+    }
+}
+
+.text {
+    padding: 0.75em 0;
+    font-weight: 700;
+    color: var(--color);
+    background-color: transparent;
+
+    &:hover,
+    &:focus-visible {
+        color: var(--color-hover);
+    }
+
+    &:active {
+        color: var(--color-active);
+    }
+}

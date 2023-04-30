@@ -11,6 +11,11 @@ html {
 }
 
 body {
+    // color: var(--text);
+    background: var(--background);
+}
+
+#root {
     display: grid;
     place-items: center;
     min-height: 100vh;

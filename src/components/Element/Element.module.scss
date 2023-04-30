@@ -1,11 +1,11 @@
 @use "../../scss/abstract/mixins" as *;
 
-.element {
+.element_wrapper {
     cursor: pointer;
     padding: 0.15rem;
-    transition: all 0.3s ease;
+    transition: var(--hover);
 
-    .element_inner {
+    .element {
         @include flex($justify: center);
 
         height: 100%;
@@ -47,7 +47,7 @@
     &.active {
         transform: scale(1.05);
 
-        .element_inner {
+        .element {
             background: transparent;
         }
 
@@ -55,7 +55,7 @@
         .name,
         .number,
         .mass {
-            -webkit-text-fill-color: #222;
+            -webkit-text-fill-color: var(--background);
         }
     }
 }
@@ -106,4 +106,10 @@
     .number {
         @include text-gradient(#58ac30, #a7df62);
     }
+}
+
+.disabled {
+    pointer-events: none;
+    cursor: default;
+    opacity: 0.2;
 }

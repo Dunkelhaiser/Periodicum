@@ -1,0 +1,41 @@
+.check {
+    display: none;
+}
+
+.checkbox {
+    cursor: pointer;
+
+    padding: 0.5em 1.5em;
+
+    font-weight: 700;
+    color: var(--text);
+
+    background-color: transparent;
+    border: 0.15em solid var(--button);
+    border-radius: 0.5em;
+
+    transition: var(--hover);
+
+    &:hover,
+    &:focus-visible {
+        border-color: var(--button-hover);
+    }
+
+    &:active {
+        border-color: var(--button-active);
+    }
+}
+
+input[type="checkbox"]:checked + .checkbox {
+    color: var(--text);
+    background-color: var(--button);
+
+    &:hover,
+    &:focus-visible {
+        background-color: var(--button-hover);
+    }
+
+    &:active {
+        background-color: var(--button-active);
+    }
+}

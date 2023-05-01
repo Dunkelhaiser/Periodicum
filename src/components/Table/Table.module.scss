@@ -1,14 +1,14 @@
 .periodic_table {
     display: grid;
-    grid-template-columns: repeat(18, 70px);
-    grid-template-rows: repeat(7, 70px);
+    grid-template-columns: repeat(18, 4.375rem);
+    grid-template-rows: repeat(7, 4.375rem);
     gap: 0.625rem;
 }
 
 .second_row {
     display: grid;
-    grid-template-columns: repeat(14, 70px);
-    grid-template-rows: repeat(2, 70px);
+    grid-template-columns: repeat(14, 4.375rem);
+    grid-template-rows: repeat(2, 4.375rem);
     gap: 0.625rem;
 
     margin-top: 0.5rem;

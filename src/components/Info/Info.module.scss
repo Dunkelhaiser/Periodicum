@@ -1,0 +1,17 @@
+@use "../../scss/abstract/mixins" as *;
+
+.info {
+    @include flex($direction: row, $gap: 1rem);
+
+    width: 1430px;
+    margin: 1rem;
+    padding: 1.25rem 2rem;
+
+    background-color: var(--foreground);
+    border-radius: 0.5rem;
+    box-shadow: var(--dark-shadow) 0 8px 24px;
+
+    p {
+        font-size: 1.1rem;
+    }
+}

@@ -4,9 +4,11 @@ import TableStyles from "./Table.module.scss";
 import Element from "../Element/Element";
 import data from "../../data1.json";
 import { OptionsContext } from "../../context/OptionsContext";
+import { ElementContext } from "../../context/ElementContext";
 
 const Table: React.FC = () => {
     const { visibility } = useContext(OptionsContext);
+    const { element: globalElement, setElement } = useContext(ElementContext);
 
     const isVisible = (category: string, phase: string) => {
         return (
@@ -36,6 +38,7 @@ const Table: React.FC = () => {
                     (element.number < 57 || element.number >= 71) &&
                     (element.number < 89 || element.number >= 103) && (
                         <Element
+                            onClick={() => setElement(globalElement === element.symbol ? "" : element.symbol)}
                             key={uuid()}
                             symbol={element.symbol}
                             name={element.name}
@@ -51,6 +54,7 @@ const Table: React.FC = () => {
                     (element) =>
                         ((element.number >= 57 && element.number <= 70) || (element.number >= 89 && element.number <= 102)) && (
                             <Element
+                                onClick={() => setElement(globalElement === element.symbol ? "" : element.symbol)}
                                 key={uuid()}
                                 symbol={element.symbol}
                                 name={element.name}

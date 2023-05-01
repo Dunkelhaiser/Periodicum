@@ -2,7 +2,11 @@
 
 .element_wrapper {
     cursor: pointer;
+
+    width: 4.375rem;
+    height: 4.375rem;
     padding: 0.15rem;
+
     transition: var(--hover);
 
     .element {

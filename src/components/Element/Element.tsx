@@ -1,3 +1,5 @@
+import { useContext } from "react";
+import { ElementContext } from "../../context/ElementContext";
 import S from "./Element.module.scss";
 
 interface Props {
@@ -6,16 +8,18 @@ interface Props {
     number: number;
     atomicMass: number;
     color: "s" | "p" | "d" | "f";
-    active?: boolean;
     disabled?: boolean;
+    onClick?: () => void;
 }
 
-const Element: React.FC<Props> = ({ name, symbol, number, atomicMass, color = "p", active, disabled }) => {
+const Element: React.FC<Props> = ({ name, symbol, number, atomicMass, color = "p", disabled, onClick }) => {
+    const { element } = useContext(ElementContext);
     return (
         <div
-            className={`${S.element_wrapper} ${S[color]} ${active ? S.active : ""} ${disabled ? S.disabled : ""}`}
+            className={`${S.element_wrapper} ${S[color]} ${element === symbol ? S.active : ""} ${disabled ? S.disabled : ""}`}
             tabIndex={0}
             role="button"
+            onClick={onClick}
         >
             <div className={S.element}>
                 <div className={S.header}>

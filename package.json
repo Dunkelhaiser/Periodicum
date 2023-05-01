@@ -1,5 +1,5 @@
 {
-    "name": "periodic-table",
+    "name": "periodicum",
     "private": true,
     "version": "0.0.0",
     "type": "module",
@@ -42,6 +42,7 @@
         "stylelint-order": "^6.0.2",
         "stylelint-scss": "^4.4.0",
         "typescript": "^4.9.3",
-        "vite": "^4.1.0"
+        "vite": "^4.1.0",
+        "vite-plugin-pwa": "^0.14.7"
     }
 }

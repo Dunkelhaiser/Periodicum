@@ -16,13 +16,12 @@ body {
 }
 
 #root {
-    display: grid;
-    place-items: center;
-
-    min-height: 100vh;
     padding: 1rem 2rem;
-
     background: var(--background);
+
+    & > * {
+        margin-inline: auto;
+    }
 }
 
 ::-webkit-scrollbar {

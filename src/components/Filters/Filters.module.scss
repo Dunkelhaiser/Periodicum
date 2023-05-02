@@ -1,8 +1,9 @@
 @use "../../scss/abstract/mixins" as *;
 
 .filters {
-    @include flex($direction: row, $justify: space-between, $gap: 0.5rem);
+    @include flex($direction: row, $justify: space-between, $align: center, $gap: 0.5rem);
 
+    height: 100%;
     padding-inline: 2rem;
 
     & > div {

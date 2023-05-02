@@ -4,32 +4,37 @@ import Element from "../Element/Element";
 import data from "../../data1.json";
 import { OptionsContext } from "../../context/OptionsContext";
 import { ElementContext } from "../../context/ElementContext";
+import Filters from "../Filters/Filters";
 
 const Table: React.FC = () => {
-    const { visibility } = useContext(OptionsContext);
+    const { filter } = useContext(OptionsContext);
     const { element: globalElement, setElement } = useContext(ElementContext);
 
-    const isVisible = (category: string, phase: string) => {
+    const isDisabled = (category: string) => {
+        if (filter.length === 0) {
+            return false;
+        }
         return (
-            ((category === "nonmetal" || category === "halogen" || category === "noble gas") && !visibility.nonmetal) ||
-            ((category === "alkali metal" ||
-                category === "alkaline earth metal" ||
-                category === "post-transition metal" ||
-                category === "transition metal" ||
-                category === "metalloid" ||
-                category === "lanthanide" ||
-                category === "actinide") &&
-                !visibility.metal) ||
-            (phase === "Solid" && !visibility.solid) ||
-            (phase === "Liquid" && !visibility.liquid) ||
-            (phase === "Gas" && !visibility.gas)
+            (category === "nonmetal" && !filter.includes("nonmetal")) ||
+            (category === "halogen" && !filter.includes("halogen")) ||
+            (category === "noble gas" && !filter.includes("noble gas")) ||
+            (category === "alkaline earth metal" && !filter.includes("alkaline earth metal")) ||
+            (category === "alkali metal" && !filter.includes("alkali metal")) ||
+            (category === "post-transition metal" && !filter.includes("post-transition metal")) ||
+            (category === "transition metal" && !filter.includes("transition metal")) ||
+            (category === "metalloid" && !filter.includes("metalloid")) ||
+            (category === "lanthanide" && !filter.includes("lanthanide")) ||
+            (category === "actinide" && !filter.includes("actinide"))
         );
     };
 
     return (
         <div className={TableStyles.periodic_table}>
             <div className={TableStyles.empty} />
-            <div className={TableStyles.empty} />
+
+            <div className={TableStyles.empty}>
+                <Filters />
+            </div>
             <div className={TableStyles.empty} />
             <div className={TableStyles.empty} />
             {data.map(
@@ -44,7 +49,7 @@ const Table: React.FC = () => {
                             number={element.number}
                             atomicMass={Math.round(element.atomicMass * 1e3) / 1e3}
                             color={element.block as "s" | "p" | "d" | "f"}
-                            disabled={isVisible(element.category, element.phase)}
+                            disabled={isDisabled(element.category)}
                         />
                     )
             )}
@@ -60,7 +65,7 @@ const Table: React.FC = () => {
                                 number={element.number}
                                 atomicMass={Math.round(element.atomicMass * 1e3) / 1e3}
                                 color={element.block as "s" | "p" | "d" | "f"}
-                                disabled={isVisible(element.category, element.phase)}
+                                disabled={isDisabled(element.category)}
                             />
                         )
                 )}

@@ -14,12 +14,22 @@ interface Props {
 
 const Element: React.FC<Props> = ({ name, symbol, number, atomicMass, color = "p", disabled, onClick }) => {
     const { element } = useContext(ElementContext);
+
+    const handleKeyDown = (e: React.KeyboardEvent<HTMLDivElement>) => {
+        if ((e.key === "Enter" || e.key === " ") && onClick) {
+            e.preventDefault();
+            onClick();
+        }
+    };
+
     return (
         <div
             className={`${S.element_wrapper} ${S[color]} ${element === symbol ? S.active : ""} ${disabled ? S.disabled : ""}`}
             tabIndex={0}
             role="button"
+            aria-pressed={element === symbol}
             onClick={onClick}
+            onKeyDown={handleKeyDown}
         >
             <div className={S.element}>
                 <div className={S.header}>

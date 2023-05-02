@@ -12,12 +12,12 @@ html {
 
 body {
     color: var(--text);
-    background: var(--background);
+    background-color: var(--background);
 }
 
 #root {
     padding: 1rem 2rem;
-    background: var(--background);
+    background-color: var(--background);
 
     & > * {
         margin-inline: auto;

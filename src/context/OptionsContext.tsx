@@ -1,58 +1,35 @@
 import React, { createContext, useMemo, useState } from "react";
 
 interface OptionsContextType {
-    visibility: {
-        nonmetal: boolean;
-        metal: boolean;
-        gas: boolean;
-        liquid: boolean;
-        solid: boolean;
-    };
-    setVisibilityWrapper: (key: "nonmetal" | "metal" | "gas" | "solid" | "liquid") => void;
+    filter: string[];
+    handleCheckboxChange: (e: React.ChangeEvent<HTMLInputElement>) => void;
 }
 
 const iOptionsContextState = {
-    visibility: {
-        nonmetal: true,
-        metal: true,
-        gas: true,
-        liquid: true,
-        solid: true,
-    },
-    setVisibilityWrapper: () => {},
+    filter: [],
+    handleCheckboxChange: () => {},
 };
 
 export const OptionsContext = createContext<OptionsContextType>(iOptionsContextState);
 
 const OptionsContextProvider: React.FC<{ children: React.ReactNode }> = ({ children }) => {
-    const [visibility, setVisibility] = useState<{
-        nonmetal: boolean;
-        metal: boolean;
-        gas: boolean;
-        liquid: boolean;
-        solid: boolean;
-        [key: string]: boolean;
-    }>({
-        nonmetal: true,
-        metal: true,
-        gas: true,
-        liquid: true,
-        solid: true,
-    });
+    const [filter, setFilter] = useState<string[]>([]);
 
-    const setVisibilityWrapper = (key: "nonmetal" | "metal" | "gas" | "solid" | "liquid") => {
-        setVisibility((prevState) => ({
-            ...prevState,
-            [key]: !prevState[key],
-        }));
+    const handleCheckboxChange = (e: React.ChangeEvent<HTMLInputElement>) => {
+        const { value } = e.target;
+        const isChecked = e.target.checked;
+        setFilter((prevFilter) => {
+            const newFilter = isChecked ? [...prevFilter, value] : prevFilter.filter((val) => val !== value);
+            return [...newFilter];
+        });
     };
 
     const values = useMemo(
         () => ({
-            visibility,
-            setVisibilityWrapper,
+            filter,
+            handleCheckboxChange,
         }),
-        [visibility]
+        [filter]
     );
     return <OptionsContext.Provider value={values}>{children}</OptionsContext.Provider>;
 };

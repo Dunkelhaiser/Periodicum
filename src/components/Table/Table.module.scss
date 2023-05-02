@@ -1,18 +1,18 @@
-.periodic_table {
+.periodic_table,
+.second_row {
     display: grid;
+    gap: 0.625rem;
+}
+
+.periodic_table {
     grid-template-columns: repeat(18, 4.375rem);
     grid-template-rows: repeat(7, 4.375rem);
-    gap: 0.625rem;
-
     width: fit-content;
 }
 
 .second_row {
-    display: grid;
     grid-template-columns: repeat(14, 4.375rem);
     grid-template-rows: repeat(2, 4.375rem);
-    gap: 0.625rem;
-
     margin-top: 0.5rem;
 }
 

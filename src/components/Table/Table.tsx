@@ -1,5 +1,4 @@
 import { useContext } from "react";
-import { v4 as uuid } from "uuid";
 import TableStyles from "./Table.module.scss";
 import Element from "../Element/Element";
 import data from "../../data1.json";
@@ -39,7 +38,7 @@ const Table: React.FC = () => {
                     (element.number < 89 || element.number >= 103) && (
                         <Element
                             onClick={() => setElement(globalElement === element.symbol ? "" : element.symbol)}
-                            key={uuid()}
+                            key={element.number}
                             symbol={element.symbol}
                             name={element.name}
                             number={element.number}
@@ -55,7 +54,7 @@ const Table: React.FC = () => {
                         ((element.number >= 57 && element.number <= 70) || (element.number >= 89 && element.number <= 102)) && (
                             <Element
                                 onClick={() => setElement(globalElement === element.symbol ? "" : element.symbol)}
-                                key={uuid()}
+                                key={element.number}
                                 symbol={element.symbol}
                                 name={element.name}
                                 number={element.number}

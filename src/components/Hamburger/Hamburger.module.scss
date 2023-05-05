@@ -1,0 +1,42 @@
+.lines {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    width: 32px;
+    height: 26px;
+}
+
+.line {
+    height: 4px;
+    background-color: var(--text);
+    border-radius: 10px;
+}
+
+.line:nth-child(1) {
+    transform-origin: 0% 0%;
+    transition: transform 0.4s ease-in-out;
+}
+
+.line:nth-child(2) {
+    transition: transform 0.2s ease-in-out;
+}
+
+.line:nth-child(3) {
+    transform-origin: 0% 100%;
+    transition: transform 0.4s ease-in-out;
+}
+
+.lines[aria-expanded="true"] {
+    .line:nth-child(1) {
+        transform: rotate(45deg);
+    }
+
+    .line:nth-child(2) {
+        transform: scaleY(0);
+    }
+
+    .line:nth-child(3) {
+        transform: rotate(-45deg);
+    }
+}

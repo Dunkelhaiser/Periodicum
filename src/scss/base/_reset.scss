@@ -8,16 +8,32 @@
 
 html {
     font-family: Poppins, sans-serif;
+    background-color: var(--background);
 }
 
-body {
+body,
+#root {
     color: var(--text);
     background-color: var(--background);
 }
 
-#root {
+html[data-theme="light"] {
+    body,
+    #root {
+        color: #292d36;
+        background-color: #f7f7f7;
+    }
+}
+
+.app {
+    min-height: 100vh;
     padding: 1rem 2rem;
+
+    color: var(--text);
+
     background-color: var(--background);
+
+    transition: var(--hover);
 
     & > * {
         margin-inline: auto;
@@ -30,7 +46,7 @@ body {
 }
 
 ::-webkit-scrollbar-track {
-    background-color: var(--foreground);
+    background-color: transparent;
 }
 
 ::-webkit-scrollbar-thumb {

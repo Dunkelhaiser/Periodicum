@@ -1,0 +1,83 @@
+@use "../../scss/abstract/mixins" as *;
+
+.menu {
+    @include flex($direction: column-reverse, $gap: 2rem, $align: center, $justify: flex-start);
+
+    position: fixed;
+    right: 2rem;
+    bottom: 1rem;
+
+    overflow: hidden;
+
+    aspect-ratio: 1;
+    width: 65px;
+    height: 65px;
+    padding: 1.35rem;
+
+    background: hsl(0deg 0% 100%/5%);
+    backdrop-filter: blur(0.5rem);
+    border-radius: 0.5rem;
+
+    transition: var(--hover);
+}
+
+.menu.expanded {
+    height: 173px;
+}
+
+.options {
+    @include flex($gap: 1rem, $align: center, $justify: center);
+
+    list-style: none;
+}
+
+.lines {
+    @include flex($align: stretch, $justify: space-between, $gap: 0.3rem);
+
+    width: 32px;
+    height: 26px;
+}
+
+.line {
+    height: 4px;
+    background-color: var(--text);
+    border-radius: 10px;
+
+    &:nth-child(1) {
+        transform-origin: 0% 0%;
+        transition: transform 0.4s ease-in-out;
+    }
+
+    &:nth-child(2) {
+        transition: transform 0.2s ease-in-out;
+    }
+
+    &:nth-child(3) {
+        transform-origin: 0% 100%;
+        transition: transform 0.4s ease-in-out;
+    }
+}
+
+.lines[aria-expanded="true"] {
+    .line:nth-child(1) {
+        transform: rotate(45deg) translate(4px, -4px);
+    }
+
+    .line:nth-child(2) {
+        transform: scaleY(0);
+    }
+
+    .line:nth-child(3) {
+        transform: rotate(-45deg) translate(4px, 4px);
+    }
+}
+
+.button {
+    cursor: pointer;
+
+    font-size: 1.5rem;
+    color: var(--text);
+
+    background: transparent;
+    border: none;
+}

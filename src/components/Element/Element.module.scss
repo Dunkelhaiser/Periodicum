@@ -117,3 +117,22 @@
     cursor: default;
     opacity: 0.2;
 }
+
+:global(#light) {
+    .element_wrapper {
+        .element {
+            background: transparent;
+        }
+
+        .title,
+        .name,
+        .number,
+        .mass {
+            -webkit-text-fill-color: var(--background);
+        }
+    }
+
+    .p {
+        @include background-gradient(#f5ba6c, #ecd867);
+    }
+}

@@ -9,7 +9,13 @@
         "import-notation": "string",
         "selector-class-pattern": null,
         "scss/dollar-variable-empty-line-before": null,
-        "scss/at-extend-no-missing-placeholder": null
+        "scss/at-extend-no-missing-placeholder": null,
+        "selector-pseudo-class-no-unknown": [
+            true,
+            {
+                "ignorePseudoClasses": ["global"]
+            }
+        ]
     },
     "ignoreFiles": ["node_modules/**", "dist/**", "vite.config.ts", "**/**.ts"],
     "overrides": [

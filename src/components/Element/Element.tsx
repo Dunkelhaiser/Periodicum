@@ -23,9 +23,10 @@ const Element: React.FC<Props> = ({ name, symbol, number, atomicMass, color = "p
     };
 
     return (
+        // eslint-disable-next-line jsx-a11y/interactive-supports-focus
         <div
             className={`${S.element_wrapper} ${S[color]} ${element === symbol ? S.active : ""} ${disabled ? S.disabled : ""}`}
-            tabIndex={0}
+            tabIndex={disabled ? undefined : 0}
             role="button"
             aria-pressed={element === symbol}
             onClick={onClick}

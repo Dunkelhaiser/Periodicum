@@ -6,14 +6,14 @@ interface ThemeContextType {
 }
 
 const iThemeContextState = {
-    theme: localStorage.getItem("theme") || "light",
+    theme: localStorage.getItem("theme") || "dark",
     setThemeHandler: () => {},
 };
 
 export const ThemeContext = createContext<ThemeContextType>(iThemeContextState);
 
 const ThemeContextProvider: React.FC<{ children: React.ReactNode }> = ({ children }) => {
-    const [theme, setTheme] = useState(localStorage.getItem("theme") || "light");
+    const [theme, setTheme] = useState(localStorage.getItem("theme") || "dark");
 
     const setThemeStorage = (selectedTheme: string) => {
         localStorage.setItem("theme", selectedTheme);

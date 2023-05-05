@@ -34,6 +34,7 @@
 .lines {
     @include flex($align: stretch, $justify: space-between, $gap: 0.3rem);
 
+    cursor: pointer;
     width: 32px;
     height: 26px;
 }

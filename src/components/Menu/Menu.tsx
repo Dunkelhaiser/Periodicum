@@ -8,9 +8,24 @@ import Styles from "./Menu.module.scss";
 const Menu: React.FC = () => {
     const [expanded, setExpanded] = useToggle(false);
     const { theme, setThemeHandler } = useContext(ThemeContext);
+
+    const handleKeyDown = (e: React.KeyboardEvent<HTMLDivElement>) => {
+        if (e.key === "Enter" || e.key === " ") {
+            e.preventDefault();
+            setExpanded();
+        }
+    };
+
     return (
         <div className={`${Styles.menu} ${expanded ? Styles.expanded : ""}`} aria-expanded={expanded}>
-            <div className={Styles.lines} aria-expanded={expanded} role="button" tabIndex={0} onClick={() => setExpanded()}>
+            <div
+                className={Styles.lines}
+                aria-expanded={expanded}
+                role="button"
+                tabIndex={0}
+                onClick={() => setExpanded()}
+                onKeyDown={handleKeyDown}
+            >
                 <span className={Styles.line} />
                 <span className={Styles.line} />
                 <span className={Styles.line} />

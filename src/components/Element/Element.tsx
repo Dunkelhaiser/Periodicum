@@ -38,7 +38,7 @@ const Element: React.FC<Props> = ({ name, symbol, number, atomicMass, color = "p
                     <span className={S.number}>{number}</span>
                 </div>
                 <span className={S.name}>{name}</span>
-                <span className={S.mass}>{atomicMass}</span>
+                <span className={S.mass}>{Math.round(atomicMass * 1e3) / 1e3}</span>
             </div>
         </div>
     );

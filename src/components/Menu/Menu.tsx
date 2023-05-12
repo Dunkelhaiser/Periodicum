@@ -4,10 +4,12 @@ import { faMoon, faSun, faLanguage } from "@fortawesome/free-solid-svg-icons";
 import { ThemeContext } from "../../context/ThemeContext";
 import useToggle from "../../hooks/useToggle";
 import Styles from "./Menu.module.scss";
+import { LanguageContext } from "../../context/LanguageContext";
 
 const Menu: React.FC = () => {
     const [expanded, setExpanded] = useToggle(false);
     const { theme, setThemeHandler } = useContext(ThemeContext);
+    const { language, setLanguageHandler } = useContext(LanguageContext);
 
     const handleKeyDown = (e: React.KeyboardEvent<HTMLDivElement>) => {
         if (e.key === "Enter" || e.key === " ") {
@@ -32,12 +34,24 @@ const Menu: React.FC = () => {
             </div>
             <ul className={`${Styles.options}`}>
                 <li>
-                    <button type="button" onClick={() => setThemeHandler()} className={Styles.button} aria-label="Theme Button">
+                    <button
+                        type="button"
+                        onClick={() => setThemeHandler()}
+                        className={Styles.button}
+                        aria-label="Theme Button"
+                        tabIndex={expanded ? 0 : -1}
+                    >
                         {theme === "light" ? <FontAwesomeIcon icon={faMoon} /> : <FontAwesomeIcon icon={faSun} />}
                     </button>
                 </li>
                 <li>
-                    <button type="button" onClick={() => {}} className={Styles.button} aria-label="Change Language">
+                    <button
+                        type="button"
+                        onClick={() => setLanguageHandler(language === "english" ? "ukrainian" : "english")}
+                        className={Styles.button}
+                        aria-label="Change Language"
+                        tabIndex={expanded ? 0 : -1}
+                    >
                         <FontAwesomeIcon icon={faLanguage} />
                     </button>
                 </li>

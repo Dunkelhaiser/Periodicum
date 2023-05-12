@@ -1,14 +1,15 @@
 import { useContext } from "react";
 import TableStyles from "./Table.module.scss";
 import Element from "../Element/Element";
-import data from "../../data1.json";
 import { OptionsContext } from "../../context/OptionsContext";
 import { ElementContext } from "../../context/ElementContext";
 import Filters from "../Filters/Filters";
+import { LanguageContext } from "../../context/LanguageContext";
 
 const Table: React.FC = () => {
     const { filter } = useContext(OptionsContext);
     const { element: globalElement, setElement } = useContext(ElementContext);
+    const { data } = useContext(LanguageContext);
 
     const isDisabled = (category: string) => {
         if (filter.length === 0) {
@@ -37,34 +38,35 @@ const Table: React.FC = () => {
             </div>
             <div className={TableStyles.empty} />
             <div className={TableStyles.empty} />
-            {data.map(
+            {data?.map(
                 (element) =>
-                    (element.number < 57 || element.number >= 71) &&
-                    (element.number < 89 || element.number >= 103) && (
+                    (element.atomicNumber < 57 || element.atomicNumber >= 71) &&
+                    (element.atomicNumber < 89 || element.atomicNumber >= 103) && (
                         <Element
                             onClick={() => setElement(globalElement === element.symbol ? "" : element.symbol)}
-                            key={element.number}
+                            key={element.atomicNumber}
                             symbol={element.symbol}
                             name={element.name}
-                            number={element.number}
-                            atomicMass={Math.round(element.atomicMass * 1e3) / 1e3}
-                            color={element.block as "s" | "p" | "d" | "f"}
+                            number={element.atomicNumber}
+                            atomicMass={element.atomicMass}
+                            color={element.block}
                             disabled={isDisabled(element.category)}
                         />
                     )
             )}
             <div className={TableStyles.second_row}>
-                {data.map(
+                {data?.map(
                     (element) =>
-                        ((element.number >= 57 && element.number <= 70) || (element.number >= 89 && element.number <= 102)) && (
+                        ((element.atomicNumber >= 57 && element.atomicNumber <= 70) ||
+                            (element.atomicNumber >= 89 && element.atomicNumber <= 102)) && (
                             <Element
                                 onClick={() => setElement(globalElement === element.symbol ? "" : element.symbol)}
-                                key={element.number}
+                                key={element.atomicNumber}
                                 symbol={element.symbol}
                                 name={element.name}
-                                number={element.number}
-                                atomicMass={Math.round(element.atomicMass * 1e3) / 1e3}
-                                color={element.block as "s" | "p" | "d" | "f"}
+                                number={element.atomicNumber}
+                                atomicMass={element.atomicMass}
+                                color={element.block}
                                 disabled={isDisabled(element.category)}
                             />
                         )

@@ -12,7 +12,7 @@
     aspect-ratio: 1;
     width: 65px;
     height: 65px;
-    padding: 1.35rem;
+    padding: 1.25rem;
 
     background: hsl(0deg 0% 100%/5%);
     backdrop-filter: blur(0.5rem);
@@ -32,7 +32,7 @@
 }
 
 .lines {
-    @include flex($align: stretch, $justify: space-between, $gap: 0.3rem);
+    @include flex($align: stretch, $justify: space-between, $gap: 0.45rem);
 
     cursor: pointer;
     width: 32px;

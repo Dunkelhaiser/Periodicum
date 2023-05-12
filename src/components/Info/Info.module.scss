@@ -9,9 +9,10 @@
 
     background-color: var(--foreground);
     border-radius: 0.5rem;
-    box-shadow: var(--dark-shadow) 0 8px 24px;
+    box-shadow: var(--shadow) 0 8px 24px;
 
     div {
+        transform: scale(1) !important;
         border-radius: 0.25rem;
     }
 }

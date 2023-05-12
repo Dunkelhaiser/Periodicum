@@ -1,11 +1,12 @@
 import { useContext } from "react";
 import { ElementContext } from "../../context/ElementContext";
+import { LanguageContext } from "../../context/LanguageContext";
 import Element from "../Element/Element";
 import S from "./Info.module.scss";
-import data from "../../data1.json";
 
 const Info: React.FC = () => {
     const { element } = useContext(ElementContext);
+    const { data } = useContext(LanguageContext);
 
     const elementData = data.find((el) => el.symbol === element);
 
@@ -17,13 +18,13 @@ const Info: React.FC = () => {
                         <Element
                             symbol={elementData.symbol}
                             name={elementData.name}
-                            number={elementData.number}
+                            number={elementData.atomicNumber}
                             atomicMass={Math.round(elementData.atomicMass * 1e3) / 1e3}
                             color={elementData.block as "s" | "p" | "d" | "f"}
                         />
                     </div>
                 )}
-                <p>{elementData?.summary}</p>
+                <p>{elementData?.description}</p>
             </div>
             <div className={S.data}>
                 <p>
@@ -36,10 +37,10 @@ const Info: React.FC = () => {
                     <span>Atomic weight:</span> {elementData?.atomicMass}
                 </p>
                 <p>
-                    <span>Boiling point:</span> {elementData?.boil}
+                    <span>Boiling point:</span> {elementData?.boilingPoint}
                 </p>
                 <p>
-                    <span>Melting point:</span> {elementData?.melt}
+                    <span>Melting point:</span> {elementData?.meltingPoint}
                 </p>
                 <p>
                     <span>Density:</span> {elementData?.density}

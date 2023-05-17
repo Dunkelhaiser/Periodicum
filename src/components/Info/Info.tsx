@@ -1,6 +1,7 @@
 import { useContext } from "react";
 import { ElementContext } from "../../context/ElementContext";
 import { LanguageContext } from "../../context/LanguageContext";
+import { formatValue } from "../../utilities/utilities";
 import ModalWindow from "../ModalWindow/ModalWindow";
 import S from "./Info.module.scss";
 
@@ -8,12 +9,13 @@ interface Props {
     label: string;
     value: string | number | undefined;
 }
+
 const Data: React.FC<Props> = ({ label, value }) => {
     const nullValue = !value && value !== 0;
     return (
         <div className={S.data}>
             <p className={`${S.property} ${nullValue ? S.null : ""}`}>{label}</p>
-            <p className={`${S.value} ${nullValue ? S.null : ""}`}>{nullValue ? "---" : value}</p>
+            <p className={`${S.value} ${nullValue ? S.null : ""}`}>{nullValue ? "---" : formatValue(value)}</p>
         </div>
     );
 };

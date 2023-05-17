@@ -16,11 +16,15 @@
 .property {
     margin-bottom: 0.25rem;
     font-weight: 700;
-    text-transform: capitalize;
 
     &::after {
         content: ":";
     }
+}
+
+.property,
+.value {
+    text-transform: capitalize;
 }
 
 .null {

@@ -1,38 +1,28 @@
 @use "../../scss/abstract/mixins" as *;
 
-.info {
-    @include flex($gap: 1rem);
+.header {
+    margin-bottom: 1.5rem;
+}
 
-    width: 1430px;
-    margin: 1rem;
-    padding: 1.25rem 2rem;
+.data,
+.title {
+    margin-bottom: 1rem;
+}
 
-    background-color: var(--foreground);
-    border-radius: 0.5rem;
-    box-shadow: var(--shadow) 0 8px 24px;
+.section {
+    margin-bottom: 2rem;
+}
 
-    div {
-        transform: scale(1) !important;
-        border-radius: 0.25rem;
+.property {
+    margin-bottom: 0.25rem;
+    font-weight: 700;
+    text-transform: capitalize;
+
+    &::after {
+        content: ":";
     }
 }
 
-.summary {
-    @include flex($direction: row, $gap: 1rem);
-
-    p {
-        font-size: 1.1rem;
-    }
-}
-
-.data {
-    @include flex($gap: 0.5rem);
-
-    font-style: italic;
-
-    span {
-        font-weight: 700;
-        font-style: normal;
-        text-transform: capitalize;
-    }
+.null {
+    opacity: 0.25;
 }

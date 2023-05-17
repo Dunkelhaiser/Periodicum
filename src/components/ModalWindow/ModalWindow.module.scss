@@ -1,0 +1,28 @@
+@use "../../scss/abstract/mixins" as *;
+@use "../../scss/abstract/screen-queries" as *;
+
+.modal_window {
+    position: fixed;
+    z-index: 9999;
+    top: 0;
+    right: 0;
+    left: 0;
+
+    overflow: auto;
+
+    width: 50%;
+    max-height: calc(100% - 2 * 3.125rem);
+    margin: 3.125rem auto;
+    padding: 2rem 3rem;
+
+    background-color: var(--foreground);
+    border-radius: 0.3125rem;
+
+    @media ($phone) {
+        width: 70%;
+    }
+}
+
+html[data-theme="light"] {
+    --foreground: #f9f9f9;
+}

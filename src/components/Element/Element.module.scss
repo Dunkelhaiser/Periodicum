@@ -136,3 +136,9 @@
         @include background-gradient(#f5ba6c, #ecd867);
     }
 }
+
+:global(#dark) {
+    .element_wrapper {
+        outline: none;
+    }
+}

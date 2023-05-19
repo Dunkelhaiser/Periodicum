@@ -18,8 +18,11 @@
     background-color: var(--foreground);
     border-radius: 0.3125rem;
 
+    @media ($tablet) {
+        width: 75%;
+    }
     @media ($phone) {
-        width: 70%;
+        width: 90%;
     }
 }
 

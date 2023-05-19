@@ -30,35 +30,19 @@ const Table: React.FC = () => {
     };
 
     return (
-        <div className={TableStyles.periodic_table}>
-            <div className={TableStyles.empty} />
+        <div className={TableStyles.wrapper}>
+            <div className={TableStyles.periodic_table}>
+                <div className={TableStyles.empty} />
 
-            <div className={TableStyles.empty}>
-                <Filters />
-            </div>
-            <div className={TableStyles.empty} />
-            <div className={TableStyles.empty} />
-            {data?.map(
-                (element) =>
-                    (element.atomicNumber < 57 || element.atomicNumber >= 71) &&
-                    (element.atomicNumber < 89 || element.atomicNumber >= 103) && (
-                        <Element
-                            onClick={() => setElement(globalElement === element.symbol ? "" : element.symbol)}
-                            key={element.atomicNumber}
-                            symbol={element.symbol}
-                            name={element.name}
-                            number={element.atomicNumber}
-                            atomicMass={element.atomicMass}
-                            color={element.block}
-                            disabled={isDisabled(element.category)}
-                        />
-                    )
-            )}
-            <div className={TableStyles.second_row}>
+                <div className={TableStyles.empty}>
+                    <Filters />
+                </div>
+                <div className={TableStyles.empty} />
+                <div className={TableStyles.empty} />
                 {data?.map(
                     (element) =>
-                        ((element.atomicNumber >= 57 && element.atomicNumber <= 70) ||
-                            (element.atomicNumber >= 89 && element.atomicNumber <= 102)) && (
+                        (element.atomicNumber < 57 || element.atomicNumber >= 71) &&
+                        (element.atomicNumber < 89 || element.atomicNumber >= 103) && (
                             <Element
                                 onClick={() => setElement(globalElement === element.symbol ? "" : element.symbol)}
                                 key={element.atomicNumber}
@@ -71,6 +55,24 @@ const Table: React.FC = () => {
                             />
                         )
                 )}
+                <div className={TableStyles.second_row}>
+                    {data?.map(
+                        (element) =>
+                            ((element.atomicNumber >= 57 && element.atomicNumber <= 70) ||
+                                (element.atomicNumber >= 89 && element.atomicNumber <= 102)) && (
+                                <Element
+                                    onClick={() => setElement(globalElement === element.symbol ? "" : element.symbol)}
+                                    key={element.atomicNumber}
+                                    symbol={element.symbol}
+                                    name={element.name}
+                                    number={element.atomicNumber}
+                                    atomicMass={element.atomicMass}
+                                    color={element.block}
+                                    disabled={isDisabled(element.category)}
+                                />
+                            )
+                    )}
+                </div>
             </div>
         </div>
     );

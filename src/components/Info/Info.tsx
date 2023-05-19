@@ -43,6 +43,7 @@ const Info: React.FC = () => {
                 <Data label="Group" value={elementData?.group} />
                 <Data label="Block" value={elementData?.block} capitalize={false} />
                 <Data label="State" value={elementData?.state} />
+                <Data label="Radioactive" value={String(elementData?.radioactive)} />
                 <Data label="Crystal structure" value={elementData?.crystalStructure} />
                 <Data label="Atomic mass" value={elementData?.atomicMass} unit="g/mol" />
                 <Data label="Density" value={elementData?.density} unit="g/cm³" />

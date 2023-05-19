@@ -8,18 +8,33 @@ const Filters: React.FC = () => {
     return (
         <section className={Styles.filters}>
             <div>
-                <Checkbox label="Nonmetals" value="nonmetal" color="#ffc171" onChange={handleCheckboxChange} />
-                <Checkbox label="Halogens" value="halogen" color="#ffea71" onChange={handleCheckboxChange} />
-                <Checkbox label="Noble Gases" value="noble gas" color="#523c6f" onChange={handleCheckboxChange} />
-                <Checkbox label="Alkali Metal" value="alkali metal" color="#ff616d" onChange={handleCheckboxChange} />
-                <Checkbox label="Alkaline Earth Metal" value="alkaline earth metal" color="#ff9971" onChange={handleCheckboxChange} />
+                <Checkbox label="Nonmetals" value="nonmetal" color="var(--nonmetal)" onChange={handleCheckboxChange} />
+                <Checkbox label="Halogens" value="halogen" color="var(--halogen)" onChange={handleCheckboxChange} />
+                <Checkbox label="Noble Gases" value="noble gas" color="var(--noble-gas)" onChange={handleCheckboxChange} />
+                <Checkbox label="Alkali Metal" value="alkali metal" color="var(--alkali-metal)" onChange={handleCheckboxChange} />
+                <Checkbox
+                    label="Alkaline Earth Metal"
+                    value="alkaline earth metal"
+                    color="var(--alkaline-earth-metal)"
+                    onChange={handleCheckboxChange}
+                />
             </div>
             <div>
-                <Checkbox label="Transition Metal" value="transition metal" color="#37cfdc" onChange={handleCheckboxChange} />
-                <Checkbox label="Post-Transition Metal" value="post-transition metal" color="#5a88e5" onChange={handleCheckboxChange} />
-                <Checkbox label="Metalloid" value="metalloid" color="#303d57" onChange={handleCheckboxChange} />
-                <Checkbox label="Lanthanide" value="lanthanide" color="#58ac30" onChange={handleCheckboxChange} />
-                <Checkbox label="Actinide" value="actinide" color="#a7df62" onChange={handleCheckboxChange} />
+                <Checkbox
+                    label="Transition Metal"
+                    value="transition metal"
+                    color="var(--transition-metal)"
+                    onChange={handleCheckboxChange}
+                />
+                <Checkbox
+                    label="Post-Transition Metal"
+                    value="post-transition metal"
+                    color="var(--post-transition-metal)"
+                    onChange={handleCheckboxChange}
+                />
+                <Checkbox label="Metalloid" value="metalloid" color="var(--metalloid)" onChange={handleCheckboxChange} />
+                <Checkbox label="Lanthanide" value="lanthanide" color="var(--lanthanide)" onChange={handleCheckboxChange} />
+                <Checkbox label="Actinide" value="actinide" color="var(--actinide)" onChange={handleCheckboxChange} />
             </div>
         </section>
     );

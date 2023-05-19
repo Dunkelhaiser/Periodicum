@@ -1,8 +1,5 @@
 @use "../../scss/abstract/mixins" as *;
-
-.header {
-    margin-bottom: 1.5rem;
-}
+@use "../../scss/abstract/screen-queries" as *;
 
 .data,
 .title {
@@ -32,4 +29,36 @@
 
 .unit {
     text-transform: none;
+}
+
+.badge {
+    padding: 0.5em 1em;
+
+    font-size: 0.85rem;
+    font-weight: 700;
+    text-transform: uppercase;
+
+    border-radius: 0.5em;
+}
+
+.radioactive {
+    @extend .badge;
+
+    background-color: var(--radioactive);
+}
+
+.heading {
+    @include flex($direction: row, $justify: space-between, $align: center);
+
+    margin-bottom: 1.5rem;
+
+    @media ($phone) {
+        @include flex($direction: column, $align: flex-start, $gap: 0.5rem);
+    }
+}
+
+.badges {
+    @include flex($direction: row, $gap: 1rem, $align: center);
+
+    color: var(--text);
 }

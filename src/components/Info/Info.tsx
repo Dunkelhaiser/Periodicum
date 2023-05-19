@@ -33,9 +33,44 @@ const Info: React.FC = () => {
 
     const elementData = data.find((el) => el.symbol === element);
 
+    const getCategoryColor = (category?: string) => {
+        switch (category) {
+            case "alkali metal":
+                return "var(--alkali-metal)";
+            case "alkaline earth metal":
+                return "var(--alkaline-earth-metal)";
+            case "transition metal":
+                return "var(--transition-metal)";
+            case "post-transition metal":
+                return "var(--post-transition-metal)";
+            case "metalloid":
+                return "var(--metalloid)";
+            case "nonmetal":
+                return "var(--nonmetal)";
+            case "halogen":
+                return "var(--halogen)";
+            case "noble gas":
+                return "var(--noble-gas)";
+            case "lanthanide":
+                return "var(--lanthanide)";
+            case "actinide":
+                return "var(--actinide)";
+            default:
+                return "transparent";
+        }
+    };
+
     return (
         <ModalWindow show={Boolean(elementData)} onClose={() => setElement("")}>
-            <h2 className={S.header}>{elementData?.name}</h2>
+            <div className={S.heading}>
+                <h2 className={S.header}>{elementData?.name}</h2>
+                <div className={S.badges}>
+                    <span className={S.badge} style={{ backgroundColor: getCategoryColor(elementData?.category) }}>
+                        {elementData?.category}
+                    </span>
+                    {elementData?.radioactive && <span className={S.radioactive}>Radioactive</span>}
+                </div>
+            </div>
             <div className={S.section}>
                 <h3 className={S.title}>Atomic Properties</h3>
                 <Data label="Atomic number" value={elementData?.atomicNumber} />
@@ -43,7 +78,6 @@ const Info: React.FC = () => {
                 <Data label="Group" value={elementData?.group} />
                 <Data label="Block" value={elementData?.block} capitalize={false} />
                 <Data label="State" value={elementData?.state} />
-                <Data label="Radioactive" value={String(elementData?.radioactive)} />
                 <Data label="Crystal structure" value={elementData?.crystalStructure} />
                 <Data label="Atomic mass" value={elementData?.atomicMass} unit="g/mol" />
                 <Data label="Density" value={elementData?.density} unit="g/cm³" />

@@ -1,3 +1,6 @@
+import { faReact } from "@fortawesome/free-brands-svg-icons";
+import { faAtom, faEarthEurope, faMagnet } from "@fortawesome/free-solid-svg-icons";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { useContext } from "react";
 import { ElementContext } from "../../context/ElementContext";
 import { LanguageContext } from "../../context/LanguageContext";
@@ -63,7 +66,9 @@ const Info: React.FC = () => {
     return (
         <ModalWindow show={Boolean(elementData)} onClose={() => setElement("")}>
             <div className={S.heading}>
-                <h2 className={S.header}>{elementData?.name}</h2>
+                <h2 className={S.header}>
+                    {elementData?.name} <span className={S.symbol}>( {elementData?.symbol} )</span>
+                </h2>
                 <div className={S.badges}>
                     <span className={S.badge} style={{ backgroundColor: getCategoryColor(elementData?.category) }}>
                         {elementData?.category}
@@ -72,7 +77,9 @@ const Info: React.FC = () => {
                 </div>
             </div>
             <div className={S.section}>
-                <h3 className={S.title}>Atomic Properties</h3>
+                <h3 className={S.title} style={{ backgroundColor: "var(--noble-gas)" }}>
+                    <FontAwesomeIcon icon={faAtom} /> Atomic Properties
+                </h3>
                 <Data label="Atomic number" value={elementData?.atomicNumber} />
                 <Data label="Period" value={elementData?.period} />
                 <Data label="Group" value={elementData?.group} />
@@ -94,7 +101,9 @@ const Info: React.FC = () => {
                 <Data label="Electron configuration( semantic )" value={elementData?.electronConfigurationSemantic} />
             </div>
             <div className={S.section}>
-                <h3 className={S.title}>Electromagnetic Properties</h3>
+                <h3 className={S.title} style={{ backgroundColor: "var(--alkali-metal)" }}>
+                    <FontAwesomeIcon icon={faMagnet} /> Electromagnetic Properties
+                </h3>
                 <Data label="Electronegativity" value={elementData?.electronegativity} />
                 <Data label="Magnetic type" value={elementData?.magneticType} />
                 <Data label="Electrical type" value={elementData?.electricalType} />
@@ -103,7 +112,9 @@ const Info: React.FC = () => {
                 <Data label="Superconducting point" value={elementData?.superconductingPoint} unit="°C" />
             </div>
             <div className={S.section}>
-                <h3 className={S.title}>Abundance</h3>
+                <h3 className={S.title} style={{ backgroundColor: "var(--lanthanide)" }}>
+                    <FontAwesomeIcon icon={faEarthEurope} /> Abundance
+                </h3>
                 <Data label="Universe" value={elementData?.abundanceUniverse} unit="%" />
                 <Data label="Sun" value={elementData?.abundanceSun} unit="%" />
                 <Data label="Earth crust" value={elementData?.abundanceEarth} unit="%" />
@@ -111,7 +122,9 @@ const Info: React.FC = () => {
                 <Data label="Human body" value={elementData?.abundanceHumans} unit="%" />
             </div>
             <div className={S.section}>
-                <h3 className={S.title}>Overview</h3>
+                <h3 className={S.title} style={{ backgroundColor: "var(--post-transition-metal)" }}>
+                    <FontAwesomeIcon icon={faReact} /> Overview
+                </h3>
                 <Data label="Latin name" value={elementData?.latinName} />
                 <Data label="Year of discovery" value={elementData?.yearDiscovered} />
                 <Data label="Discovered by" value={elementData?.discoveredBy} />

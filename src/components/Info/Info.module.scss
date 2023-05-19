@@ -48,7 +48,7 @@
 }
 
 .heading {
-    @include flex($direction: row, $justify: space-between, $align: center);
+    @include flex($direction: row, $justify: space-between, $align: center, $wrap: wrap);
 
     margin-bottom: 1.5rem;
 
@@ -61,4 +61,18 @@
     @include flex($direction: row, $gap: 1rem, $align: center);
 
     color: var(--text);
+}
+
+.symbol {
+    font-size: 0.85rem;
+}
+
+.title {
+    width: fit-content;
+    padding: 0.75em 1em;
+
+    font-size: 1.1rem;
+    color: var(--text);
+
+    border-radius: 0.5em;
 }

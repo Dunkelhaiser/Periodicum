@@ -5,7 +5,7 @@ const fixFloatingPoint = (val: number) => Number.parseFloat(val.toPrecision(15))
 const formatValue = (value: string | number | undefined) => {
     const threshold = 1e-6;
     if (typeof value === "number" && value !== 0) {
-        if (Math.abs(value) < threshold) {
+        if (Math.abs(value) < threshold || Math.abs(value) > -threshold) {
             const exponent = Math.floor(Math.log10(value));
             const coefficient = fixFloatingPoint(value / 10 ** exponent);
             const exponentFormatted = exponent.toString().replace(/^-/, "");
@@ -13,7 +13,10 @@ const formatValue = (value: string | number | undefined) => {
             return (
                 <span>
                     <span className="coefficient">{coefficient}*10</span>
-                    <sup className="exponent">-{exponentFormatted}</sup>
+                    <sup className="exponent">
+                        {exponent < 0 ? "-" : ""}
+                        {exponentFormatted}
+                    </sup>
                 </span>
             );
         }

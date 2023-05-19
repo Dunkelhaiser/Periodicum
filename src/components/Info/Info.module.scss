@@ -22,11 +22,14 @@
     }
 }
 
-.property,
-.value {
+.capitalize {
     text-transform: capitalize;
 }
 
 .null {
     opacity: 0.25;
+}
+
+.unit {
+    text-transform: none;
 }

@@ -1,11 +1,13 @@
 const handleChildElementClick = (e: React.FormEvent) => e.stopPropagation();
 
+const fixFloatingPoint = (val: number) => Number.parseFloat(val.toPrecision(15));
+
 const formatValue = (value: string | number | undefined) => {
     const threshold = 1e-6;
     if (typeof value === "number" && value !== 0) {
         if (Math.abs(value) < threshold) {
             const exponent = Math.floor(Math.log10(value));
-            const coefficient = (value / 10 ** exponent).toPrecision();
+            const coefficient = fixFloatingPoint(value / 10 ** exponent);
             const exponentFormatted = exponent.toString().replace(/^-/, "");
 
             return (
@@ -19,4 +21,4 @@ const formatValue = (value: string | number | undefined) => {
     return value;
 };
 
-export { handleChildElementClick, formatValue };
+export { handleChildElementClick, formatValue, fixFloatingPoint };

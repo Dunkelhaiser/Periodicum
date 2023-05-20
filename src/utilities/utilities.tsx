@@ -1,6 +1,6 @@
 const handleChildElementClick = (e: React.FormEvent) => e.stopPropagation();
 
-const fixFloatingPoint = (val: number) => Number.parseFloat(val.toPrecision(15));
+const fixFloatingPoint = (value: number) => Number.parseFloat(value.toPrecision(15));
 
 const formatValue = (value: string | number | undefined) => {
     if (typeof value === "number" && value !== 0) {
@@ -23,4 +23,11 @@ const formatValue = (value: string | number | undefined) => {
     return value;
 };
 
-export { handleChildElementClick, formatValue, fixFloatingPoint };
+const handleKeyDown = <T extends HTMLElement>(e: React.KeyboardEvent<T>, onClick?: () => void) => {
+    if ((e.key === "Enter" || e.key === " ") && onClick) {
+        e.preventDefault();
+        onClick();
+    }
+};
+
+export { handleChildElementClick, formatValue, fixFloatingPoint, handleKeyDown };

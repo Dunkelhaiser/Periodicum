@@ -19,7 +19,7 @@ const Menu: React.FC = () => {
     };
 
     return (
-        <div className={`${Styles.menu} ${expanded ? Styles.expanded : ""}`} aria-expanded={expanded}>
+        <div className={`${Styles.menu} ${expanded ? Styles.expanded : ""}`}>
             <div
                 className={Styles.lines}
                 aria-expanded={expanded}
@@ -27,6 +27,7 @@ const Menu: React.FC = () => {
                 tabIndex={0}
                 onClick={() => setExpanded()}
                 onKeyDown={handleKeyDown}
+                aria-label="Menu Button"
             >
                 <span className={Styles.line} />
                 <span className={Styles.line} />

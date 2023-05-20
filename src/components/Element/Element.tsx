@@ -1,5 +1,6 @@
 import { useContext } from "react";
 import { ElementContext } from "../../context/ElementContext";
+import { handleKeyDown } from "../../utilities/utilities";
 import S from "./Element.module.scss";
 
 interface Props {
@@ -15,13 +16,6 @@ interface Props {
 const Element: React.FC<Props> = ({ name, symbol, number, atomicMass, color = "p", disabled, onClick }) => {
     const { element } = useContext(ElementContext);
 
-    const handleKeyDown = (e: React.KeyboardEvent<HTMLDivElement>) => {
-        if ((e.key === "Enter" || e.key === " ") && onClick) {
-            e.preventDefault();
-            onClick();
-        }
-    };
-
     return (
         // eslint-disable-next-line jsx-a11y/interactive-supports-focus
         <div
@@ -30,7 +24,7 @@ const Element: React.FC<Props> = ({ name, symbol, number, atomicMass, color = "p
             role="button"
             aria-pressed={element === symbol}
             onClick={onClick}
-            onKeyDown={handleKeyDown}
+            onKeyDown={(e) => handleKeyDown(e, onClick)}
         >
             <div className={S.element}>
                 <div className={S.header}>

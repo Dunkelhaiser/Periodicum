@@ -1,7 +1,7 @@
 import { faReact } from "@fortawesome/free-brands-svg-icons";
 import { faAtom, faEarthEurope, faMagnet } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { useContext } from "react";
+import { useContext, useEffect } from "react";
 import { ElementContext } from "../../context/ElementContext";
 import { LanguageContext } from "../../context/LanguageContext";
 import { formatValue } from "../../utilities/utilities";
@@ -30,9 +30,20 @@ const Data: React.FC<Props> = ({ label, value, unit, capitalize = true }) => {
     );
 };
 
-const Info: React.FC = () => {
+interface ModalProps {
+    isShowing: boolean;
+    modalRef: React.RefObject<HTMLDivElement>;
+}
+
+const Info: React.FC<ModalProps> = ({ isShowing, modalRef }) => {
     const { element, setElement } = useContext(ElementContext);
     const { data } = useContext(LanguageContext);
+
+    useEffect(() => {
+        if (!isShowing) {
+            setElement("");
+        }
+    }, [isShowing]);
 
     const elementData = data.find((el) => el.symbol === element);
 
@@ -64,7 +75,7 @@ const Info: React.FC = () => {
     };
 
     return (
-        <ModalWindow show={Boolean(elementData)} onClose={() => setElement("")}>
+        <ModalWindow show={isShowing} modalRef={modalRef}>
             <div className={S.heading}>
                 <h2 className={S.header}>
                     {elementData?.name} <span className={S.symbol}>( {elementData?.symbol} )</span>

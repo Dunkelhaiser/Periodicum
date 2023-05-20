@@ -1,0 +1,14 @@
+{
+    "filters": {
+        "nonmetals": "Nonmetals",
+        "halogens": "Halogens",
+        "noble_gases": "Noble gases",
+        "alkali_metals": "Alkali metals",
+        "alkaline_earth_metals": "Alkaline earth metals",
+        "post_transition_metals": "Post transition metals",
+        "transition_metals": "Transition metals",
+        "metalloids": "Metalloids",
+        "lanthanides": "Lanthanides",
+        "actinides": "Actinides"
+    }
+}

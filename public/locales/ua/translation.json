@@ -1,0 +1,14 @@
+{
+    "filters": {
+        "nonmetals": "Неметали",
+        "halogens": "Галогени",
+        "noble_gases": "Благородні гази",
+        "alkali_metals": "Лужні метали",
+        "alkaline_earth_metals": "Лужноземельні метали",
+        "transition_metals": "Перехідні метали",
+        "post_transition_metals": "Після-перехідні метали",
+        "metalloids": "Металоїди",
+        "lanthanides": "Лантаноїди",
+        "actinides": "Актиноїди"
+    }
+}

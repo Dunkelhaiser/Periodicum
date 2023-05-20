@@ -1,4 +1,3 @@
-import { createPortal } from "react-dom";
 import { AnimatePresence, motion } from "framer-motion";
 import ModalStyles from "./ModalWindow.module.scss";
 import Overlay from "../Overlay/Overlay";
@@ -6,15 +5,17 @@ import { handleChildElementClick } from "../../utilities/utilities";
 
 interface Props {
     show: boolean;
-    onClose: () => void;
+    onClose?: () => void;
+    modalRef: React.RefObject<HTMLDivElement>;
     children: React.ReactNode;
 }
-const ModalWindow: React.FC<Props> = ({ show, children, onClose }) => {
-    return createPortal(
+const ModalWindow: React.FC<Props> = ({ show, children, modalRef }) => {
+    return (
         <AnimatePresence>
             {show && (
-                <Overlay onClick={onClose}>
+                <Overlay>
                     <motion.div
+                        ref={modalRef}
                         className={ModalStyles.modal_window}
                         onClick={handleChildElementClick}
                         initial={{ opacity: 0 }}
@@ -26,9 +27,7 @@ const ModalWindow: React.FC<Props> = ({ show, children, onClose }) => {
                     </motion.div>
                 </Overlay>
             )}
-        </AnimatePresence>,
-        // eslint-disable-next-line @typescript-eslint/no-non-null-assertion
-        document.querySelector("#overlays")!
+        </AnimatePresence>
     );
 };
 

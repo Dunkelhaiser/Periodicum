@@ -10,6 +10,7 @@
     cursor: pointer;
     font-weight: 700;
     color: var(--text);
+    text-transform: capitalize;
 
     &::before {
         content: "";

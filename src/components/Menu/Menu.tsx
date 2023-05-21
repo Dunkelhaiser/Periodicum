@@ -4,8 +4,8 @@ import { faMoon, faSun, faLanguage } from "@fortawesome/free-solid-svg-icons";
 import { ThemeContext } from "../../context/ThemeContext";
 import useToggle from "../../hooks/useToggle";
 import Styles from "./Menu.module.scss";
-import ModalWindow from "../ModalWindow/ModalWindow";
 import useModal from "../ModalWindow/useModal";
+import LanguageSwitcher from "../LanguageSwitcher/LanguageSwitcher";
 
 const Menu: React.FC = () => {
     const [expanded, setExpanded] = useToggle(false);
@@ -50,7 +50,6 @@ const Menu: React.FC = () => {
                     <li>
                         <button
                             type="button"
-                            // onClick={() => setLanguageHandler(language === "english" ? "ukrainian" : "english")}
                             onClick={showModal}
                             className={Styles.button}
                             aria-label="Change Language"
@@ -61,9 +60,7 @@ const Menu: React.FC = () => {
                     </li>
                 </ul>
             </div>
-            <ModalWindow modalRef={modalRef} show={isShowing}>
-                <h2>Languages</h2>
-            </ModalWindow>
+            <LanguageSwitcher isShowing={isShowing} modalRef={modalRef} />
         </>
     );
 };

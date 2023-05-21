@@ -1,4 +1,5 @@
 import { useContext } from "react";
+import { useTranslation } from "react-i18next";
 import TableStyles from "./Table.module.scss";
 import Element from "../Element/Element";
 import { OptionsContext } from "../../context/OptionsContext";
@@ -13,22 +14,23 @@ const Table: React.FC = () => {
     const { element: globalElement, setElement } = useContext(ElementContext);
     const { data } = useContext(LanguageContext);
     const { isShowing, showModal, modalRef } = useModal();
+    const { t } = useTranslation();
 
     const isDisabled = (category: string) => {
         if (filter.length === 0) {
             return false;
         }
         return (
-            (category === "nonmetal" && !filter.includes("nonmetal")) ||
-            (category === "halogen" && !filter.includes("halogen")) ||
-            (category === "noble gas" && !filter.includes("noble gas")) ||
-            (category === "alkaline earth metal" && !filter.includes("alkaline earth metal")) ||
-            (category === "alkali metal" && !filter.includes("alkali metal")) ||
-            (category === "post-transition metal" && !filter.includes("post-transition metal")) ||
-            (category === "transition metal" && !filter.includes("transition metal")) ||
-            (category === "metalloid" && !filter.includes("metalloid")) ||
-            (category === "lanthanide" && !filter.includes("lanthanide")) ||
-            (category === "actinide" && !filter.includes("actinide"))
+            (category === t("filters.nonmetal") && !filter.includes(t("filters.nonmetal"))) ||
+            (category === t("filters.halogen") && !filter.includes(t("filters.halogen"))) ||
+            (category === t("filters.noble_gas") && !filter.includes(t("filters.noble_gas"))) ||
+            (category === t("filters.alkaline_earth_metal") && !filter.includes(t("filters.alkaline_earth_metal"))) ||
+            (category === t("filters.alkali_metal") && !filter.includes(t("filters.alkali_metal"))) ||
+            (category === t("filters.post_transition_metal") && !filter.includes(t("filters.post_transition_metal"))) ||
+            (category === t("filters.transition_metal") && !filter.includes(t("filters.transition_metal"))) ||
+            (category === t("filters.metalloid") && !filter.includes(t("filters.metalloid"))) ||
+            (category === t("filters.lanthanide") && !filter.includes(t("filters.lanthanide"))) ||
+            (category === t("filters.actinide") && !filter.includes(t("filters.actinide")))
         );
     };
 

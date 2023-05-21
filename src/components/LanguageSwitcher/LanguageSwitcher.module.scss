@@ -1,0 +1,9 @@
+@use "../../scss/abstract/mixins" as *;
+
+.title {
+    margin-bottom: 1.5rem;
+}
+
+.list {
+    @include flex($gap: 1rem);
+}

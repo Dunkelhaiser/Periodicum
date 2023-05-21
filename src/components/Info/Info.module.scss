@@ -19,7 +19,7 @@
     }
 }
 
-.capitalize {
+.value:not(.unit)::first-letter {
     text-transform: capitalize;
 }
 
@@ -72,7 +72,8 @@
     padding: 0.75em 1em;
 
     font-size: 1.1rem;
-    color: var(--text);
+    color: #f9f9f9;
+    text-transform: capitalize;
 
     border-radius: 0.5em;
 }

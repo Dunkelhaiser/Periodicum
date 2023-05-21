@@ -52,25 +52,25 @@ const Info: React.FC<ModalProps> = ({ isShowing, modalRef }) => {
 
     const getCategoryColor = (category?: string) => {
         switch (category) {
-            case "alkali metal":
+            case t("filters.alkali_metal"):
                 return "var(--alkali-metal)";
-            case "alkaline earth metal":
+            case t("filters.alkaline_earth_metal"):
                 return "var(--alkaline-earth-metal)";
-            case "transition metal":
+            case t("filters.transition_metal"):
                 return "var(--transition-metal)";
-            case "post-transition metal":
+            case t("filters.post_transition_metal"):
                 return "var(--post-transition-metal)";
-            case "metalloid":
+            case t("filters.metalloid"):
                 return "var(--metalloid)";
-            case "nonmetal":
+            case t("filters.nonmetal"):
                 return "var(--nonmetal)";
-            case "halogen":
+            case t("filters.halogen"):
                 return "var(--halogen)";
-            case "noble gas":
+            case t("filters.noble_gas"):
                 return "var(--noble-gas)";
-            case "lanthanide":
+            case t("filters.lanthanide"):
                 return "var(--lanthanide)";
-            case "actinide":
+            case t("filters.actinide"):
                 return "var(--actinide)";
             default:
                 return "transparent";

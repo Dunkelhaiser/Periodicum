@@ -16,6 +16,8 @@ This is an interactive periodic table application. In it you can click on elemen
     - [Screenshots](#screenshots)
   - [Author](#author)
 
+[![ko-fi](https://ko-fi.com/img/githubbutton_sm.svg)](https://ko-fi.com/W7W7LIYO1)
+
 ## Overview
 
 ### Demo

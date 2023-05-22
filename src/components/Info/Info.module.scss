@@ -60,7 +60,7 @@
 .badges {
     @include flex($direction: row, $gap: 1rem, $align: center);
 
-    color: var(--text);
+    color: #f9f9f9;
 }
 
 .symbol {

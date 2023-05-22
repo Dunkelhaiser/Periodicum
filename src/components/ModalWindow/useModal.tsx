@@ -7,31 +7,59 @@ const useModal = () => {
     const hideModal = () => {
         setIsShowing(false);
     };
-    const handleClickOutside = (e: MouseEvent) => {
-        if (modalRef.current && !modalRef.current.contains(e.target as Node)) {
-            hideModal();
-        }
-    };
     useEffect(() => {
         const handleKeyDown = (e: KeyboardEvent) => {
             if (!isShowing) {
                 return;
             }
-            if (e.key === "Tab") {
-                e.preventDefault();
-            } else if (e.key === "Escape") {
+            if (e.key === "Escape") {
                 hideModal();
             }
         };
 
+        const handleClickOutside = (e: MouseEvent) => {
+            if (modalRef.current && !modalRef.current.contains(e.target as Node)) {
+                hideModal();
+            }
+        };
+
+        if (isShowing) {
+            const focusableElements = 'button, [href], input, select, textarea, [tabindex]:not([tabindex="-1"])';
+            const focusableOutsideModal = [...document.querySelectorAll(focusableElements)].filter((el) => !modalRef.current?.contains(el));
+
+            focusableOutsideModal.forEach((el) => el.setAttribute("tabindex", "-1"));
+
+            const handleFocus = (e: FocusEvent) => {
+                if (!modalRef.current?.contains(e.target as Node)) {
+                    e.preventDefault();
+                    modalRef.current?.focus();
+                }
+            };
+            modalRef.current?.addEventListener("focus", handleFocus, true);
+        }
+
         document.addEventListener("keydown", handleKeyDown);
         document.addEventListener("mousedown", handleClickOutside);
-        // document.body.style.overflow = "hidden";
 
         return () => {
             document.removeEventListener("keydown", handleKeyDown);
             document.removeEventListener("mousedown", handleClickOutside);
-            // document.body.style.overflow = "unset";
+
+            if (isShowing) {
+                const focusableElements = 'button, [href], input, select, textarea, [tabindex="-1"]';
+                const focusableOutsideModal = [...document.querySelectorAll(focusableElements)].filter(
+                    (el) => !modalRef.current?.contains(el)
+                );
+                focusableOutsideModal.forEach((el) => el.setAttribute("tabindex", "0"));
+
+                const handleFocus = (e: FocusEvent) => {
+                    if (!modalRef.current?.contains(e.target as Node)) {
+                        e.preventDefault();
+                        modalRef.current?.focus();
+                    }
+                };
+                modalRef.current?.removeEventListener("focus", handleFocus, true);
+            }
         };
     }, [isShowing]);
 

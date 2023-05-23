@@ -40,6 +40,7 @@
         "yearDiscovered": 1766,
         "casNumber": "CAS1333-74-0",
         "latinName": "Hydrogenium",
+        "namedAfter": "Greek 'hydro' and 'genes' meaning water-forming, as it forms water when combined with oxygen.",
         "description": "Hydrogen is the most abundant element in the universe and is essential for the formation of stars and galaxies. Hydrogen is a colorless, odorless, and tasteless gas that is highly flammable and reactive. It is the lightest element and is commonly found in combination with other elements, such as in water (H2O) and hydrocarbons. Hydrogen has many important applications, including its use as a fuel for rockets and other propulsion systems, as well as in the production of ammonia, methanol, and other important industrial chemicals. It is also used in the food industry for the hydrogenation of oils and fats. Hydrogen is considered non-toxic, but it can be dangerous when it reacts with oxygen to form explosive mixtures."
     },
     {
@@ -83,6 +84,7 @@
         "yearDiscovered": 1895,
         "casNumber": "CAS7440-59-7",
         "latinName": "Helium",
+        "namedAfter": "Greek 'helios' meaning sun, as it was first discovered in the sun.",
         "description": "Helium is a colorless, odorless, and tasteless gas that is the second lightest element, after hydrogen. Helium is the second most abundant element in the universe and is formed by the nuclear fusion of hydrogen in stars. It is also present in small amounts in the Earth's atmosphere and is extracted from natural gas deposits. Helium has many important applications, including its use in balloons, blimps, and airships as a lifting gas. It is also used in various industrial and medical applications, such as in welding, cooling and MRI machines. Helium is considered to be non-toxic and inert, meaning it does not react chemically with other elements. However, it can be dangerous if inhaled in large amounts as it can displace oxygen in the lungs and cause asphyxiation."
     },
     {
@@ -126,6 +128,7 @@
         "yearDiscovered": 1817,
         "casNumber": "CAS7439-93-2",
         "latinName": "Lithium",
+        "namedAfter": "Greek 'lithos' meaning stone, as it was first discovered in a mineral.",
         "description": "Lithium is a soft, silvery-white metal that belongs to the alkali metal group of elements. Lithium is the lightest metal and is highly reactive, easily losing its one outermost electron to form a positive ion. It is found in various minerals and is also present in seawater and some types of brines. Lithium has many important applications, including its use in rechargeable batteries, ceramics, and various pharmaceuticals. It is also used in the nuclear industry and as a coolant in some types of reactors. Lithium has some therapeutic uses as well, and is used as a medication to treat certain mental health conditions, such as bipolar disorder. However, it can have some side effects, including nausea, vomiting, and tremors, and long-term use can cause kidney and thyroid problems."
     },
     {
@@ -169,6 +172,7 @@
         "yearDiscovered": 1798,
         "casNumber": "CAS7440-41-7",
         "latinName": "Beryllium",
+        "namedAfter": "Greek 'beryllos' meaning beryl, as it was first discovered in beryl.",
         "description": "Beryllium is a rare and highly toxic metal that is steel-gray in color and has a high melting point. Beryllium is not found as a free element in nature, but is found in various minerals, such as beryl and bertrandite. Beryllium has many important applications, including its use as a structural material in aerospace and defense industries, as well as in nuclear reactors, X-ray equipment, and other types of radiation detectors. It is also used in the production of specialty alloys and ceramics. However, exposure to beryllium can be very dangerous and can cause a lung disease called chronic beryllium disease, which can be fatal in some cases. Therefore, strict safety precautions are required when handling beryllium and its compounds."
     },
     {
@@ -212,6 +216,7 @@
         "yearDiscovered": 1808,
         "casNumber": "CAS7440-42-8",
         "latinName": "Borum",
+        "namedAfter": "Arabic 'buraq' meaning borax, as it was first discovered in borax.",
         "description": "Boron is a metalloid, meaning it has properties of both metals and nonmetals, and is a member of the carbon group of elements. Boron is a hard and brittle material that is commonly found in various minerals, such as borax and kernite. Boron has many important applications, including its use as a dopant in the semiconductor industry, as a neutron absorber in nuclear reactors, and as a component in various ceramics, glasses, and heat-resistant materials. It is also used in the production of high-strength and lightweight alloys, as well as in the treatment of certain types of cancer. Boron has relatively low toxicity, but exposure to high levels can cause skin irritation and other health problems."
     },
     {
@@ -255,6 +260,7 @@
         "yearDiscovered": "3750 BC",
         "casNumber": "CAS7440-44-0",
         "latinName": "Сarbonium",
+        "namedAfter": "Latin 'carbo' meaning coal, as it has long been associated with coal.",
         "description": "Carbon is a nonmetal and the fourth most abundant element in the universe by mass. Carbon is unique in that it can form many different types of bonds, including single, double, and triple bonds, and it is the basis for all known life on Earth. Carbon exists in various forms, including diamond, graphite, and carbon nanotubes. It is found in many minerals and in all organic compounds. Carbon has many important applications, including its use as a fuel in the form of coal, oil, and natural gas, as well as in the production of various materials, such as steel, plastics, and fibers. It is also used in various forms of nanotechnology, such as in the development of carbon nanotubes and graphene. Carbon has relatively low toxicity, but certain forms, such as carbon monoxide, can be deadly if inhaled in high concentrations."
     },
     {
@@ -298,6 +304,7 @@
         "yearDiscovered": 1772,
         "casNumber": "CAS7727-37-9",
         "latinName": "Nitrogenium",
+        "namedAfter": "Greek 'nitron' and 'genes' meaning nitre-forming, as it forms nitric acid when combined with oxygen.",
         "description": "Nitrogen is a nonmetal and the most abundant element in Earth's atmosphere, making up approximately 78% of the air we breathe. Nitrogen is also found in many minerals and organic compounds. Nitrogen is an essential element for life, as it is a major component of proteins and nucleic acids, which are the building blocks of life. Nitrogen has many important applications, including its use in the production of fertilizers, as well as in the chemical and pharmaceutical industries. It is also used in the food industry as a component of modified atmospheric packaging, which helps to preserve the freshness of packaged foods. Nitrogen has relatively low toxicity, but can displace oxygen in confined spaces, leading to asphyxiation."
     },
     {
@@ -341,6 +348,7 @@
         "yearDiscovered": 1774,
         "casNumber": "CAS7782-44-7",
         "latinName": "Oxygenium",
+        "namedAfter": "Greek 'oxy' and 'genes' meaning acid-forming, as  many acids contain oxygen.",
         "description": "Oxygen is a nonmetal and the third-most abundant element in the universe by mass, and the most abundant element in the Earth's crust. Oxygen is essential for most forms of life, as it is a key component of water and many organic molecules, including carbohydrates, proteins, and nucleic acids. Oxygen gas is also vital for respiration, the process by which living organisms convert food into energy. Oxygen has many important applications, including its use in the production of steel and other metals, as well as in the chemical and medical industries. It is also used in rocket propulsion, as an oxidizer in fuel mixtures. Oxygen gas is colorless, odorless, and tasteless, but supports combustion, making it an important factor in fire safety. However, at high concentrations, it can be toxic to humans and other animals."
     },
     {
@@ -384,6 +392,7 @@
         "yearDiscovered": 1886,
         "casNumber": "CAS7782-41-4",
         "latinName": "Fluorum",
+        "namedAfter": "Latin 'fluere' meaning to flow, as it is delivered from fluorite, which was used as a flux in metal smelting.",
         "description": "Fluorine is a highly reactive and corrosive nonmetal, and is the lightest halogen in the periodic table. Fluorine is found in nature primarily in the form of the fluoride ion, which is widely distributed in rocks, soil, water, and in many living organisms. Fluorine has a number of important industrial applications, including its use in the production of uranium, aluminum, and other metals. It is also used in the production of a variety of chemicals, including refrigerants, solvents, and polymers. Fluorine is widely used in toothpaste and water fluoridation as it is effective in preventing tooth decay. Fluorine is also used in the nuclear industry as a key component of uranium enrichment processes. Fluorine gas is extremely toxic and can cause severe burns if it comes into contact with skin, so it is handled with great care in industry and research."
     },
     {
@@ -427,6 +436,7 @@
         "yearDiscovered": 1898,
         "casNumber": "CAS7440-01-9",
         "latinName": "Neon",
+        "namedAfter": "Greek 'neos' meaning new, as it was newly discovered and had unique properties compared to other gases at the time.",
         "description": "Neon is a noble gas and is the second-lightest element in the noble gas series. Neon is a colorless, odorless, and tasteless gas that makes up about 0.0018% of the Earth's atmosphere. Neon has a number of important applications, including its use in lighting and display technologies, such as neon lights and plasma display panels. It is also used in cryogenics, as a coolant for scientific research, and as a gas for welding and other industrial applications. Neon is also used in the medical field for imaging and as a tracer in gas chromatography. Neon is relatively non-reactive and is considered to be one of the inert gases, which means it does not readily form chemical compounds with other elements."
     },
     {
@@ -470,6 +480,7 @@
         "yearDiscovered": 1807,
         "casNumber": "CAS7440-23-5",
         "latinName": "Natrium",
+        "namedAfter": "From arabic 'suda' meaning headache, as it was used as a headache remedy. Latin 'natrium' is deposit of sodium carbonate, from which sodium was first isolated.",
         "description": "Sodium is a soft, silvery-white, highly reactive metal and belongs to the alkali metal group of elements. Sodium is one of the most common elements in the Earth's crust and is essential for life in all known organisms. It is found in many minerals, such as halite (rock salt) and feldspar. Sodium has a number of important applications, including its use in the production of sodium hydroxide and sodium carbonate, which are used in the manufacture of soaps, detergents, and glass. It is also used in the production of sodium vapor lamps, which are used for street lighting and other applications. Sodium is an important electrolyte in the human body and is involved in many physiological processes, such as maintaining fluid balance and transmitting nerve impulses. However, excessive consumption of sodium can lead to health problems such as high blood pressure and increased risk of heart disease."
     },
     {
@@ -513,6 +524,7 @@
         "yearDiscovered": 1808,
         "casNumber": "CAS7439-95-4",
         "latinName": "Magnesium",
+        "namedAfter": "Greek city of Magnesia, in which magnesium compounds are abundant.",
         "description": "Magnesium is a shiny, silvery-white, lightweight metal that is the eighth-most abundant element in the Earth's crust. Magnesium is an important component of many minerals, including dolomite, magnesite, and carnallite. Magnesium has a number of important applications, including its use in the production of alloys, such as aluminum-magnesium alloys and magnesium-zinc alloys. It is also used as a reducing agent in the production of titanium, zirconium, and other metals. Magnesium has a variety of uses in industry, including in the production of electronics, as a desulfurizing agent in steel production, and as a component in some fertilizers. Magnesium is also essential for human health, as it is involved in many physiological processes, including muscle and nerve function, heart health, and bone health. Magnesium can be found in many foods, such as leafy green vegetables, nuts, and whole grains."
     },
     {
@@ -556,6 +568,7 @@
         "yearDiscovered": 1825,
         "casNumber": "CAS7429-90-5",
         "latinName": "Aluminium",
+        "namedAfter": "Latin 'alumen' meaning alum, as it was first found in alum.",
         "description": "Aluminium is a silvery-white, lightweight metal that is the third-most abundant element in the Earth's crust. Aluminium is commonly found in rocks, clay, and soil, and is a key component in many minerals, including bauxite. Aluminium has a number of important applications, including its use in the production of alloys, such as aluminum-magnesium alloys and aluminum-copper alloys, which are used in a wide range of applications, including the automotive and aerospace industries. Aluminium is also used in the production of consumer goods, such as packaging materials, appliances, and electronics. Due to its lightweight and durable properties, aluminium is often preferred over other metals for these applications. Aluminium is also essential for human health, as it is involved in many physiological processes, including bone growth and brain function. It can be found in many foods, such as leafy green vegetables, nuts, and whole grains."
     },
     {
@@ -599,6 +612,7 @@
         "yearDiscovered": 1824,
         "casNumber": "CAS7440-21-3",
         "latinName": "Silicium",
+        "namedAfter": "Latin 'silex' meaning flint, as it commonly found in flint.",
         "description": "Silicon is a hard, brittle, crystalline solid with a blue-grey metallic lustre. Silicon is the second-most abundant element in the Earth's crust, after oxygen. It is commonly found in rocks, sand, and soil, and is a key component in many minerals, including quartz and feldspar. Silicon has a number of important applications, including its use in the production of electronics, as it is a primary component of semiconductors used in computer chips and other electronic devices. Silicon is also used in the production of solar panels, as it can convert sunlight into electricity. It is also used in the production of glass, ceramics, and other materials. Silicon is essential for human health, as it is involved in many physiological processes, including bone growth, connective tissue formation, and healthy skin, hair, and nails. It can be found in many foods, such as whole grains, nuts, and vegetables."
     },
     {
@@ -642,6 +656,7 @@
         "yearDiscovered": 1669,
         "casNumber": "CAS7723-14-0",
         "latinName": "Phosphorus",
+        "namedAfter": "Greek 'phosphoros' meaning bringer of light, as it glows in the dark.",
         "description": "Phosphorus is a non-metallic element that is essential for life, as it is a key component of DNA, RNA, and ATP (adenosine triphosphate), which is the primary energy source for cells. Phosphorus is the 11th most abundant element in the Earth's crust, and is commonly found in rocks, soil, and water. It has a number of important applications, including its use in the production of fertilizers, which are essential for growing crops. Phosphorus is also used in the production of detergents, food additives, and other chemicals. It has several allotropes, including white, red, and black phosphorus, each with different properties and applications. While phosphorus is essential for life, it can also be harmful in high concentrations, as it can contribute to eutrophication and other environmental problems. It is important to manage the use and disposal of phosphorus-containing materials to minimize these risks."
     },
     {
@@ -685,6 +700,7 @@
         "yearDiscovered": "600 BCE",
         "casNumber": "CAS7704-34-9",
         "latinName": "Sulphuris",
+        "namedAfter": "Latin 'sulfurium' meaning brimstone, as it was found near volcanoes.",
         "description": "Sulfur is a non-metallic element that is abundant in the Earth's crust and is commonly found in minerals such as gypsum, Epsom salt, and pyrite. Sulfur has a yellow color in its solid state, and is odorless and tasteless. It has many important industrial applications, such as the production of sulfuric acid, which is used in the production of fertilizers, detergents, and other chemicals. Sulfur is also used in the production of rubber, as a vulcanizing agent, and in the production of gunpowder. In addition, sulfur has important biological functions and is an essential nutrient for all living organisms. It is found in many amino acids, and plays a role in the synthesis of proteins and enzymes. Sulfur is also important for plant growth, and is a key component in many fertilizers. However, sulfur dioxide emissions from industrial processes can contribute to air pollution and have negative impacts on human health and the environment."
     },
     {
@@ -728,6 +744,7 @@
         "yearDiscovered": 1774,
         "casNumber": "CAS7782-50-5",
         "latinName": "Сhlorum",
+        "namedAfter": "Greek 'chloros' meaning greenish-yellow, as it forms a greenish-yellow gas.",
         "description": "Chlorine is a highly reactive, yellow-green gas that belongs to the halogen family of elements. Chlorine is used extensively in industry, as a disinfectant, and in the production of a wide variety of chemicals, including solvents, plastics, and insecticides. It is also used to purify water supplies and swimming pools. Chlorine has important biological functions, and is an essential nutrient for many organisms, including humans. It is used by the body to produce hydrochloric acid in the stomach, which helps to digest food. However, exposure to high levels of chlorine gas can be harmful and can cause severe respiratory problems, and chlorine-containing chemicals can be toxic if ingested or absorbed through the skin. Chlorine is also a major contributor to ozone depletion, and its emissions are tightly regulated in many countries."
     },
     {
@@ -771,6 +788,7 @@
         "yearDiscovered": 1894,
         "casNumber": "CAS7440-37-1",
         "latinName": "Argon",
+        "namedAfter": "Greek 'argos' meaning inactive, as it is inert and does not form compounds.",
         "description": "Argon is a noble gas that is colorless, odorless, and non-reactive under normal conditions. It is the third most abundant gas in the Earth's atmosphere, comprising about 1% of the air we breathe. Argon is produced through the decay of potassium-40 and other radioactive elements, and is isolated by the fractional distillation of liquefied air. Argon has many important industrial applications, such as its use in welding and metal fabrication, as a protective atmosphere for the production of electronic components, and in the production of light bulbs. It is also used in scientific research, particularly in studies of the behavior of atoms and molecules. While argon is generally considered non-toxic, it can displace oxygen in poorly ventilated areas, leading to asphyxiation, and should be handled with care."
     },
     {
@@ -814,6 +832,7 @@
         "yearDiscovered": 1807,
         "casNumber": "CAS7440-09-7",
         "latinName": "Kalium",
+        "namedAfter": "Arabic 'al qaliy' meaning plant ashes, from which english 'potassium' is delivered.",
         "description": "Potassium is a soft, silvery-white metal that belongs to the alkali metal group of elements. Potassium is highly reactive and is never found in its pure state in nature, but rather as compounds in minerals such as sylvite and carnallite. Potassium has many important biological functions, and is an essential nutrient for many organisms, including humans. It plays a key role in nerve and muscle function, as well as in the regulation of the body's fluid balance and blood pressure. Potassium is also used in a variety of industrial applications, such as in the production of fertilizers and other chemicals, and in the manufacture of glass and ceramics. While potassium is generally considered non-toxic, exposure to high levels of potassium can be dangerous and can cause a range of symptoms such as nausea, vomiting, and irregular heartbeat."
     },
     {
@@ -857,6 +876,7 @@
         "yearDiscovered": 1808,
         "casNumber": "CAS7440-70-2",
         "latinName": "Calcium",
+        "namedAfter": "Latin 'calx' meaning lime, as it was recieved by heating limestone.",
         "description": "Calcium is a soft, gray, alkaline earth metal that is never found in its pure form in nature due to its high reactivity. Instead, it occurs abundantly as compounds in minerals such as limestone, gypsum, and fluorite. Calcium plays a crucial role in many biological processes, including muscle and nerve function, bone formation and maintenance, and blood clotting. It is also an important element in many industrial applications, such as the production of cement, iron and steel, and fertilizers. Calcium is commonly added to foods and supplements to ensure adequate intake, particularly in individuals who are at risk of calcium deficiency. While calcium is essential for overall health, too much calcium can lead to negative health outcomes, including kidney stones and heart disease."
     },
     {
@@ -900,6 +920,7 @@
         "yearDiscovered": 1879,
         "casNumber": "CAS7440-20-2",
         "latinName": "Scandium",
+        "namedAfter": "Latin 'Scandia' meaning Scandinavia, as it was discovered by Swedish chemist Lars Frederik Nilson, who honored it after Sweden - Scandinavian country.",
         "description": "Scandium is a silvery-white metal that is relatively soft and lightweight, and is found in small amounts in various minerals such as thortveitite, euxenite, and gadolinite. Scandium has a relatively low density and melting point, and is a good conductor of electricity and heat. It is also highly reactive and forms many compounds with other elements. Scandium has a number of industrial and technological applications, particularly in the aerospace and defense industries. It is used as an alloying agent in aluminum to improve its strength, ductility, and corrosion resistance, and is also used in the production of high-intensity lamps, electronic components, and sports equipment. Scandium also has potential applications in fuel cells, hydrogen storage, and medical imaging. Despite its many useful properties, scandium is still relatively rare and expensive to extract and refine, limiting its widespread use."
     },
     {
@@ -943,6 +964,7 @@
         "yearDiscovered": 1795,
         "casNumber": "CAS7440-32-6",
         "latinName": "Titanium",
+        "namedAfter": "Titans from Greek mythology, as it is very strong metal.",
         "description": "Titanium is a lustrous, silver-gray metal known for its strength, low density, and corrosion resistance. It is widely used in aerospace and military applications, as well as in the medical and dental industries. Titanium is also commonly alloyed with other metals to enhance their strength and durability, such as in the production of sports equipment, jewelry, and musical instruments. Additionally, titanium dioxide is a widely used white pigment in paints, coatings, and plastics."
     },
     {
@@ -986,6 +1008,7 @@
         "yearDiscovered": 1830,
         "casNumber": "CAS7440-62-2",
         "latinName": "Vanadium",
+        "namedAfter": "Scandinavian goddess Vanadis.",
         "description": "Vanadium is a hard, silvery-grey, ductile, and malleable transition metal commonly found in minerals, rocks, and some crude oils. Vanadium has several oxidation states and is used in the production of high-strength steel alloys, as well as in the production of vanadium redox batteries, which are used to store energy in grid-scale applications. It is also used as a catalyst in the manufacture of various chemicals, including sulfuric acid, and as a trace mineral in animal and plant nutrition."
     },
     {
@@ -1029,6 +1052,7 @@
         "yearDiscovered": 1797,
         "casNumber": "CAS7440-47-3",
         "latinName": "Chromium",
+        "namedAfter": "Greek 'chroma' meaning color, as it forms many colorful compounds.",
         "description": "Chromium is a hard, shiny, steel-grey metal that is highly resistant to tarnishing and corrosion. Chromium has several oxidation states and is commonly found in minerals such as chromite. It is widely used in the production of stainless steel, which is highly resistant to corrosion and staining. Chromium is also used in the production of other alloys, including superalloys used in jet engines and gas turbines, and in the manufacture of various chemicals, including pigments, dyes, and tanning agents. It has also been found to be an essential nutrient for humans, playing a role in the metabolism of fats, carbohydrates, and proteins."
     },
     {
@@ -1072,6 +1096,7 @@
         "yearDiscovered": 1774,
         "casNumber": "CAS7439-96-5",
         "latinName": "Manganum",
+        "namedAfter": "Latin 'magnesia nigra', which means 'black magnesia', as it is primary found in pyrolusite, which is black.",
         "description": "Manganese is a hard, silvery-grey metal that is found in several minerals, including pyrolusite and rhodonite. Manganese has several oxidation states and is used in the production of steel and other alloys, such as aluminum alloys and copper alloys. It is also used in the manufacture of batteries, such as lithium-ion batteries, and as a pigment in paint and ceramics. Manganese is an essential nutrient for humans and animals, playing a role in various biological processes such as bone formation, metabolism, and the function of the nervous system. However, exposure to high levels of manganese can be toxic and cause neurological problems."
     },
     {
@@ -1115,6 +1140,7 @@
         "yearDiscovered": "5000 BC",
         "casNumber": "CAS7439-89-6",
         "latinName": "Ferrum",
+        "namedAfter": "Latin 'ferrum' meaning iron.",
         "description": "Iron is a metallic element that is abundant in the Earth's crust and core. Iron is silvery-grey in color and is ductile, malleable, and highly magnetic. It has several oxidation states and is used in the production of steel, which is an alloy of iron and other elements such as carbon, manganese, and nickel. Iron is also used in the manufacture of various other alloys, including stainless steel, cast iron, and wrought iron. In addition, iron is an important nutrient for humans and animals, playing a critical role in the production of hemoglobin in red blood cells, which carries oxygen from the lungs to the rest of the body. Iron is also essential for various other biological processes, including the immune system and the production of energy."
     },
     {
@@ -1158,6 +1184,7 @@
         "yearDiscovered": 1735,
         "casNumber": "CAS7440-48-4",
         "latinName": "Cobaltum",
+        "namedAfter": "German 'kobold' meaning goblin, as it was found in mines and was considered as a goblin's work.",
         "description": "Cobalt is a hard, brittle, silvery-grey metal that is found in several minerals, including cobaltite and erythrite. Cobalt has several oxidation states and is used in the production of alloys, such as high-strength steels, superalloys used in jet engines and gas turbines, and magnetic alloys used in electric motors and generators. It is also used in the production of rechargeable batteries, such as lithium-ion batteries, and as a catalyst in the manufacture of various chemicals, including petroleum refining and the production of plastics. Cobalt has also been found to be an essential nutrient for humans, playing a role in the production of red blood cells and the metabolism of vitamin B12. However, exposure to high levels of cobalt can be toxic and cause lung and heart problems."
     },
     {
@@ -1201,6 +1228,7 @@
         "yearDiscovered": 1751,
         "casNumber": "CAS7440-02-0",
         "latinName": "Niccolum",
+        "namedAfter": "German 'kupfernickel' meaning devil's copper, as it was considered as a copper ore, but it was not.",
         "description": "Nickel is a silvery-white, hard, and ductile metal that is commonly found in ores such as pentlandite and garnierite. Nickel has several oxidation states and is used in the production of alloys, such as stainless steel, which is highly resistant to corrosion and staining, as well as other alloys used in the aerospace, chemical, and electrical industries. It is also used in the manufacture of rechargeable batteries, such as nickel-cadmium batteries, and as a catalyst in the production of various chemicals. Nickel is an essential nutrient for some organisms, but excessive exposure to nickel can be toxic and cause respiratory problems, skin irritation, and other health issues."
     },
     {
@@ -1244,6 +1272,7 @@
         "yearDiscovered": "9000 BC",
         "casNumber": "CAS7440-50-8",
         "latinName": "Cuprum",
+        "namedAfter": "Latin 'cuprum' meaning Cyprus, as it was major source of copper.",
         "description": "Copper is a soft, malleable, and ductile metal that has a reddish-orange color when in its pure form. Copper is commonly found in minerals such as chalcopyrite and bornite. It has several oxidation states and is widely used in the production of electrical wires, plumbing pipes, and various alloys such as brass and bronze. Copper is also used as a conductor of heat and electricity and as a component in various electronic devices, including computers and smartphones. It is an essential nutrient for humans and animals, playing a role in the formation of red blood cells, the immune system, and the maintenance of healthy bones and connective tissues. However, exposure to high levels of copper can be toxic and cause various health issues, including liver and kidney damage."
     },
     {
@@ -1287,6 +1316,7 @@
         "yearDiscovered": 1746,
         "casNumber": "CAS7440-66-6",
         "latinName": "Zincum",
+        "namedAfter": "German 'zinke' meaning stone.",
         "description": "Zinc is a bluish-white, moderately hard metal that is found in minerals such as sphalerite and smithsonite. Zinc has several oxidation states and is used in the production of alloys, including brass and nickel silver, as well as in the galvanization of iron and steel to prevent rusting. Zinc is also used in the manufacture of various chemicals, including rubber, paint, and pharmaceuticals. Zinc is an essential nutrient for humans and animals, playing a role in various biological processes such as immune function, wound healing, and the development of the reproductive system. It is also important for maintaining healthy skin, hair, and nails. However, excessive exposure to zinc can be toxic and cause various health issues, including stomach cramps, nausea, and vomiting."
     },
     {
@@ -1330,6 +1360,7 @@
         "yearDiscovered": 1875,
         "casNumber": "CAS7440-55-3",
         "latinName": "Gallium",
+        "namedAfter": "Latin 'gallia' meaning France, as it was discovered by french chemist Paul Emile Lecoq de Boisbaudran, who named it after France.",
         "description": "Gallium is a soft, silvery-white metal that is found in small amounts in various minerals, such as sphalerite and bauxite. Gallium has a low melting point, just above room temperature, and is used in various applications such as semiconductors, LEDs, and solar cells. It is also used in the manufacture of alloys, such as low-melting-point alloys used in fire sprinklers and thermometers. Gallium is not found in its pure form in nature and is primarily obtained as a byproduct of aluminum and zinc production. Gallium has no known biological role, but it is not considered toxic to humans."
     },
     {
@@ -1373,6 +1404,7 @@
         "yearDiscovered": 1886,
         "casNumber": "CAS7440-56-4",
         "latinName": "Germanium",
+        "namedAfter": "Latin 'Germania' meaning Germany, as it was discovered by german chemist Clemens Alexander Winkler< who named it after Germany.",
         "description": "Germanium is a lustrous, grayish-white metalloid that is found in small amounts in various minerals such as argyrodite and germanite. Germanium has several properties that make it useful in electronic applications, including its ability to act as a semiconductor, its high refractive index, and its low thermal conductivity. Germanium is used in the production of various electronic components, including transistors, diodes, and solar cells. It is also used as a catalyst in the production of polyethylene terephthalate (PET) plastics. Germanium has no known biological role, and its toxicity to humans is relatively low. However, long-term exposure to high levels of germanium can cause respiratory and skin problems."
     },
     {
@@ -1416,6 +1448,7 @@
         "yearDiscovered": 1250,
         "casNumber": "CAS7440-38-2",
         "latinName": "Arsenicum",
+        "namedAfter": "Greek 'arsenikon' meaning yellow orpiment, as mineral orpiment, which is primary made of arsenic, is yellow.",
         "description": "Arsenic is a metalloid, meaning it has properties of both metals and nonmetals. Arsenic is found in various minerals and is used in the production of various products, such as pesticides, wood preservatives, and semiconductors. It has a long history of use in medicine, including as a treatment for syphilis and other diseases. However, arsenic is highly toxic and exposure to high levels can cause various health issues, including skin lesions, respiratory problems, and an increased risk of cancer. Arsenic contamination of groundwater is a serious global problem, particularly in developing countries, and can lead to significant health problems for those who consume it."
     },
     {
@@ -1459,6 +1492,7 @@
         "yearDiscovered": 1817,
         "casNumber": "CAS7782-49-2",
         "latinName": "Selenium",
+        "namedAfter": "Selene - Greek goddess of the Moon.",
         "description": "Selenium is a nonmetal, meaning it lacks the characteristics of a metal, and is found in various minerals such as pyrite and selenite. Selenium has several important biological functions and is an essential nutrient for humans and animals. It plays a crucial role in the immune system, thyroid function, and the production of DNA. Selenium is also important for maintaining healthy skin, hair, and nails. Selenium is used in various industries, including the production of glass, electronics, and pigments. It is also used in the manufacture of solar cells and in the treatment of certain types of cancer. However, exposure to high levels of selenium can be toxic and cause various health issues, including nausea, vomiting, and hair and nail loss."
     },
     {
@@ -1502,6 +1536,7 @@
         "yearDiscovered": 1826,
         "casNumber": "CAS7726-95-6",
         "latinName": "Bromum",
+        "namedAfter": "Greek 'bromos' meaning stench, as it has a strong odor.",
         "description": "Bromine is a reddish-brown, volatile liquid that is one of the halogens. Bromine is found naturally in various minerals and is used in the production of various products, including flame retardants, agricultural chemicals, and pharmaceuticals. It is also used in the production of certain types of gasoline and as a disinfectant for water treatment. Bromine is toxic and can cause skin and eye irritation, as well as respiratory problems, if ingested or inhaled. However, it also has some medicinal uses, including as an anticonvulsant and a sedative."
     },
     {
@@ -1545,6 +1580,7 @@
         "yearDiscovered": 1898,
         "casNumber": "CAS7439-90-9",
         "latinName": "Krypton",
+        "namedAfter": "Greek 'kryptos' meaning hidden, as it is very rare and hard to isolate.",
         "description": "Krypton is a colorless, odorless, and tasteless gas that belongs to the group of noble gases. Krypton is present in trace amounts in the Earth's atmosphere and is also found in some minerals. It is used in various applications, such as in high-intensity discharge lamps, flash lamps, and fluorescent lamps. Krypton is also used in the production of laser technology, and as a gas insulator in certain types of windows. Krypton has no known biological role, and it is not considered toxic to humans. However, exposure to high levels of krypton gas can displace oxygen in the air and lead to asphyxiation."
     },
     {
@@ -1588,6 +1624,7 @@
         "yearDiscovered": 1861,
         "casNumber": "CAS7440-17-7",
         "latinName": "Rubidium",
+        "namedAfter": "Latin 'rubidus' meaning deepest red, as it has two red spectral lines.",
         "description": "Rubidium is a soft, silvery-white metal that is highly reactive and rapidly oxidizes in air, producing a characteristic violet flame. Rubidium is the second most electropositive of the stable alkali metals, and is found in small amounts in minerals such as lepidolite, pollucite, and carnallite. Rubidium has several important applications, particularly in the field of electronics. It is used in the production of photocells, as well as in the manufacture of vacuum tubes and atomic clocks. Rubidium vapor is also used in the production of magnetometers and in the study of Bose-Einstein condensates. Rubidium has potential applications in other fields as well, including in the development of high-energy density batteries and in medical imaging. Although rubidium is relatively abundant in the earth's crust, it is expensive to extract and purify, and is generally considered to be a relatively rare element."
     },
     {
@@ -1631,6 +1668,7 @@
         "yearDiscovered": 1790,
         "casNumber": "CAS7440-24-6",
         "latinName": "Strontium",
+        "namedAfter": "Scottish village of Strontian, where it was discovered.",
         "description": "Strontium is a soft, silvery-white metal that belongs to the alkaline earth metals. It is primarily found in minerals and is produced commercially for various applications. Strontium is widely used in the production of pyrotechnics, particularly red flares and fireworks, as well as in the manufacture of cathode ray tubes and ferrite magnets. It also has medical applications, where it is used in the treatment of bone cancer by preferentially targeting cancerous cells in the bones. While it has some beneficial effects on bone density, excessive exposure to strontium can be harmful and it is considered to be a radioactive hazard at high levels."
     },
     {
@@ -1674,6 +1712,7 @@
         "yearDiscovered": 1794,
         "casNumber": "CAS7440-65-5",
         "latinName": "Yttrium",
+        "namedAfter": "Ytterby, Sweden, where it was discovered.",
         "description": "Yttrium is a silvery-white metallic element that is relatively rare in nature. It belongs to the group of rare earth metals and has a variety of applications in modern technology. Yttrium is widely used as a component in alloys, especially those used in jet engines, rockets, and missiles. It is also an essential material in phosphors, which are used in fluorescent lamps, color televisions, and computer screens. Yttrium oxide is also used as a catalyst in chemical reactions, and in the production of superconductors, which have no electrical resistance at very low temperatures. Additionally, yttrium has potential applications in medical imaging and cancer treatment."
     },
     {
@@ -1717,6 +1756,7 @@
         "yearDiscovered": 1789,
         "casNumber": "CAS7440-67-7",
         "latinName": "Zirconium",
+        "namedAfter": "Persian 'zargun' meaning gold-colored, as it was discovered from mineral zircon which is gold-colored.",
         "description": "Zirconium is a lustrous, silvery-gray metal that is commonly found in nature as the mineral zircon. It has a high resistance to corrosion, making it useful in many applications, such as nuclear power plants, where it is used in fuel rods and cladding materials. Zirconium is also used in the production of alloys, such as those used in jet engines, and in the manufacture of surgical instruments and artificial joints because of its biocompatibility. Additionally, zirconium compounds are used in the production of ceramics, such as refractory materials, and in the manufacture of abrasives, such as sandpaper."
     },
     {
@@ -1760,6 +1800,7 @@
         "yearDiscovered": 1801,
         "casNumber": "CAS7440-03-1",
         "latinName": "Niobium",
+        "namedAfter": "Niobe - daughter of Tantalus, as it is similar to tantalum.",
         "description": "Niobium is a soft, silvery-grey metal that is commonly found in the Earth's crust. It has a high melting point and is highly resistant to corrosion and oxidation, making it useful in many applications. Niobium is commonly used as an alloying element in steel to increase its strength and to make it more resistant to corrosion. It is also used in the production of superconducting magnets for MRI machines and particle accelerators. Niobium is also used in the manufacture of electronic components, such as capacitors, and in the aerospace industry, where it is used in rocket engines and other high-temperature applications."
     },
     {
@@ -1803,6 +1844,7 @@
         "yearDiscovered": 1778,
         "casNumber": "CAS7439-98-7",
         "latinName": "Molybdaenum",
+        "namedAfter": "Greek 'molybdos' meaning lead, as it was originally mistaken for lead.",
         "description": "Molybdenum is a silvery-white metallic element that has a high melting point and is resistant to corrosion and wear. It is found in a variety of minerals and ores, and is commonly used as an alloying element in steel and other metals to improve their strength and durability. Molybdenum is also used in the production of electrical contacts, as a lubricant in high-temperature applications, and in the manufacture of catalysts for the chemical industry. It is also used in the production of electronic components, such as filaments for light bulbs and as a substrate for thin film deposition in the semiconductor industry. Molybdenum has a number of important biological functions, including its role as an essential trace element in the human diet."
     },
     {
@@ -1846,6 +1888,7 @@
         "yearDiscovered": 1937,
         "casNumber": "CAS7440-26-8",
         "latinName": "Technetium",
+        "namedAfter": "Greek 'tekhnetos' meaning artificial, as it was the first element to be artificially produced.",
         "description": "Technetium is the lightest element whose isotopes are all radioactive. Technetium was the first synthetic element to be produced, and it was initially discovered in 1937. It has many isotopes, but most of them have very short half-lives. Technetium is commonly used in medical imaging procedures as a radioactive tracer, as well as in industrial applications such as corrosion-resistant coatings and electrical contacts. Because of its radioactivity and potential health risks, it must be handled with care and monitored closely."
     },
     {
@@ -1889,6 +1932,7 @@
         "yearDiscovered": 1844,
         "casNumber": "CAS7440-18-8",
         "latinName": "Ruthenium",
+        "namedAfter": "Latin 'Ruthenia' meaning Russia, as it was discovered in the Ural Mountains.",
         "description": "Ruthenium is a rare transition metal belonging to the platinum group of elements. Ruthenium is a hard, silvery-white metal that is highly resistant to corrosion and oxidation. It has a high melting point and is used in the production of hard-wearing electrical contacts and wear-resistant coatings. Ruthenium compounds are also used as catalysts in a variety of chemical reactions, including the production of ammonia for fertilizers. Additionally, Ruthenium isotopes are used in radiotherapy to treat certain types of cancer."
     },
     {
@@ -1932,6 +1976,7 @@
         "yearDiscovered": 1804,
         "casNumber": "CAS7440-16-6",
         "latinName": "Rhodium",
+        "namedAfter": "Greek 'rhodon' meaning rose, as it forms a rose-colored solution when dissolved in acids.",
         "description": "Rhodium is a silvery-white, rare, and highly reflective metal that is resistant to corrosion and oxidation. Rhodium is one of the platinum group metals (PGMs) and is used in various applications, including catalytic converters, glass manufacturing, and electronics. It is also used as a coating to improve the durability and corrosion resistance of white gold and sterling silver jewelry. Rhodium has a high melting point and is one of the most expensive metals due to its rarity and specialized uses."
     },
     {
@@ -1975,6 +2020,7 @@
         "yearDiscovered": 1803,
         "casNumber": "CAS7440-05-3",
         "latinName": "Palladium",
+        "namedAfter": "Asteroid Pallas, that is named after Greek goddess Pallas Athena, which was discovered at the same time.",
         "description": "Palladium is a silvery-white metal that belongs to the platinum group of metals. It is a rare and valuable element that is known for its catalytic properties, making it an important component in various industrial processes, such as in catalytic converters for automobiles. Palladium is also used in electronics, dentistry, jewelry, and as a catalyst in chemical reactions. Due to its scarcity and high demand, palladium is a highly sought after metal in the market."
     },
     {
@@ -2018,6 +2064,7 @@
         "yearDiscovered": "5000 BC",
         "casNumber": "CAS7440-22-4",
         "latinName": "Argentum",
+        "namedAfter": "Indo-European 'arg', which means white or shining.",
         "description": "Silver is a soft, white, lustrous metal that has the highest electrical conductivity of any element and the highest thermal conductivity of any metal. Silver is often found in nature in its elemental form, as well as in various ores, such as argentite and chlorargyrite. It has a wide range of uses, including in jewelry, electronics, medicine, and photography. Due to its high value and malleability, it has also been used as currency throughout history."
     },
     {
@@ -2061,6 +2108,7 @@
         "yearDiscovered": 1817,
         "casNumber": "CAS7440-43-9",
         "latinName": "Cadmium",
+        "namedAfter": "Latin 'cadmia', which refers to zinc carbonate, where it is found.",
         "description": "Cadmium is a soft, silvery-white metal that belongs to the group of transition metals. It is commonly used in batteries, pigments, and coatings due to its resistance to corrosion and its ability to conduct electricity. However, cadmium is also considered a toxic heavy metal that can cause serious health issues when ingested or inhaled. As a result, there are strict regulations on the use and disposal of cadmium-containing products to prevent environmental contamination and human exposure."
     },
     {
@@ -2104,6 +2152,7 @@
         "yearDiscovered": 1863,
         "casNumber": "CAS7440-74-6",
         "latinName": "Indium",
+        "namedAfter": "Indigo, as it has a violet line in its spectrum.",
         "description": "Indium is a soft, silvery-white metal that is chemically similar to gallium and thallium. Indium has a low melting point and is used in alloys, solders, and semiconductors. It is also used in the production of touch screens and LCD panels, as well as in research applications such as nuclear reactors and scientific instruments. Indium is considered a rare element, as it is relatively scarce in the Earth's crust, and is mostly obtained as a by-product of other mining operations."
     },
     {
@@ -2147,6 +2196,7 @@
         "yearDiscovered": "3500 BC",
         "casNumber": "CAS7440-31-5",
         "latinName": "Stannum",
+        "namedAfter": "Anglo-Saxon 'tin', which means 'to shine'.",
         "description": "Tin is a silvery-white, soft, malleable, and ductile metal that is widely used in various alloys, such as bronze and pewter. Tin is also used as a coating material for other metals to prevent corrosion. Its compounds, such as organotin compounds, are used in various industrial applications, including PVC stabilizers, biocides, and catalysts. Tin is relatively non-toxic, and its low melting point allows it to be easily cast into intricate shapes, making it a useful material in manufacturing."
     },
     {
@@ -2190,6 +2240,7 @@
         "yearDiscovered": "3000 BC",
         "casNumber": "CAS7440-36-0",
         "latinName": "Stibium",
+        "namedAfter": "Greek 'anti' and 'monos', which means 'against law'.",
         "description": "Antimony is a gray, lustrous metalloid that has been used since ancient times in various applications, including medicine, cosmetics, and pigments. Antimony is also used in the production of flame retardants, batteries, and semiconductors. While it is not considered a highly toxic element, exposure to high levels of antimony can lead to health issues such as lung damage, skin irritation, and gastrointestinal problems."
     },
     {
@@ -2233,6 +2284,7 @@
         "yearDiscovered": 1782,
         "casNumber": "CAS13494-80-9",
         "latinName": "Tellurium",
+        "namedAfter": "Latin 'tellus' meaning Earth, as it commonly found in Earth's crust.",
         "description": "Tellurium is a brittle, silvery-white metalloid that is chemically related to selenium and sulfur. Tellurium is primarily used in the production of alloys, such as stainless steel and copper alloys, and is also used in the manufacturing of semiconductors, solar cells, and thermoelectric devices. It has several isotopes, some of which are radioactive and used in nuclear medicine. Tellurium is considered to be a rare element, and its abundance in the Earth's crust is only about 0.001 parts per million."
     },
     {
@@ -2276,6 +2328,7 @@
         "yearDiscovered": 1811,
         "casNumber": "CAS7553-56-2",
         "latinName": "Iodium",
+        "namedAfter": "Greek 'iodes' meaning violet, as it forms a violet vapor when heated.",
         "description": "Iodine is a non-metallic halogen that appears as a lustrous, purple-black solid at room temperature. Iodine has several important applications, including its use in the production of various chemicals, as a disinfectant, and in the production of iodized table salt to prevent iodine deficiency. It is also used in the medical field as a contrast agent for X-ray imaging and in thyroid treatment. Iodine is an essential nutrient for humans, and its deficiency can lead to thyroid disorders and other health problems."
     },
     {
@@ -2319,6 +2372,7 @@
         "yearDiscovered": 1898,
         "casNumber": "CAS7440-63-3",
         "latinName": "Xenon",
+        "namedAfter": "Greek 'xenos' meaning stranger, as it is a unusual compared to the other gases.",
         "description": "Xenon is a colorless, odorless, and dense gas that is found in trace amounts in the atmosphere. Xenon is one of the noble gases and is known for its inertness and stability. It is used in a variety of applications, including lighting, medical imaging, and anesthesia. In addition, xenon is also used as a propellant in ion thrusters for spacecraft propulsion. Xenon is obtained commercially by the fractional distillation of liquefied air, and it is also found in some mineral springs and ores."
     },
     {
@@ -2362,6 +2416,7 @@
         "yearDiscovered": 1860,
         "casNumber": "CAS7440-46-2",
         "latinName": "Caesium",
+        "namedAfter": "Latin 'caesius' meaning sky blue, as it has a blue line in its spectrum.",
         "description": "Caesium is a soft, silvery-golden alkali metal that is highly reactive and easily melts at room temperature. Caesium is among the most reactive elements, and it has the lowest melting point of all metallic elements. It is used in atomic clocks, magnetometers, and as a catalyst in organic chemistry reactions. It is also used in the oil drilling industry to measure the thickness of drilling mud. Caesium is a rare element, but it can be found in a number of minerals, such as pollucite and lepidolite. Its radioisotope, caesium-137, is also used in radiation therapy to treat cancer."
     },
     {
@@ -2405,6 +2460,7 @@
         "yearDiscovered": 1774,
         "casNumber": "CAS7440-39-3",
         "latinName": "Barium",
+        "namedAfter": "Greek 'barys' meaning heavy, as it is a heavy element.",
         "description": "Barium is a soft, silvery-white metal that belongs to the alkaline earth metals. Barium is highly reactive with water and air, and it reacts with most nonmetals, such as chlorine, fluorine, and sulfur. It is not found in nature as a free element, but occurs mainly in minerals such as barite and witherite. Barium has many industrial applications, including in the production of glass, electronics, and fireworks. It is also used in medicine for certain diagnostic tests, such as X-rays of the digestive system."
     },
     {
@@ -2448,6 +2504,7 @@
         "yearDiscovered": 1907,
         "casNumber": "CAS7439-94-3",
         "latinName": "Lutetium",
+        "namedAfter": "Latin 'Lutetia', which means Paris, and was named by Georges Urbain to honor his city.",
         "description": "Lutetium is a rare earth metal that belongs to the lanthanide series. It is silvery-white in color and has a relatively high melting point. Lutetium is a relatively stable metal and is not very reactive, although it can slowly react with oxygen and water. It is used in a variety of applications, including in catalysts for the petrochemical industry, in alloys for aerospace applications, and in medical imaging. It also has potential uses in nuclear power and as a neutron absorber in nuclear reactors. Lutetium has no known biological role in humans and is not considered toxic."
     },
     {
@@ -2491,6 +2548,7 @@
         "yearDiscovered": 1923,
         "casNumber": "CAS7440-58-6",
         "latinName": "Hafnium",
+        "namedAfter": "Latin 'Hafnia', which means Copenhagen, as it was discovered in Copenhagen.",
         "description": "Hafnium is a lustrous, silvery-gray metal that is ductile and highly resistant to corrosion. Hafnium is used in nuclear reactors, where it serves as a neutron absorber due to its ability to absorb large amounts of neutron radiation without swelling or contracting, and in superalloys used for high-temperature applications, such as jet engine components and gas turbines. Hafnium oxide is also used in the semiconductor industry as a high-k dielectric material, which allows for the miniaturization of electronic components."
     },
     {
@@ -2534,6 +2592,7 @@
         "yearDiscovered": 1802,
         "casNumber": "CAS7440-25-7",
         "latinName": "Tantalum",
+        "namedAfter": "Tantalos - son of Zeus, who was punished for his wrongdoings, as it's difficult to extract.",
         "description": "Tantalum is a rare, hard, blue-gray metallic element that is highly resistant to corrosion and is a good conductor of heat and electricity. It is found in minerals such as tantalite, columbite, and euxenite, and is used in the manufacture of electronic components, such as capacitors and high-power resistors, as well as in alloys for surgical instruments and jet engine parts. Tantalum is also used in the production of high-performance alloys for use in nuclear reactors, aircraft, and missiles."
     },
     {
@@ -2577,6 +2636,7 @@
         "yearDiscovered": 1781,
         "casNumber": "CAS7440-33-7",
         "latinName": "Wolframium",
+        "namedAfter": "Swedish 'tung sten' meaning heavy stone, as it is a heavy element. Latin wolframium means wolf ram, as it difficult to extract.",
         "description": "Tungsten has the highest melting point of all metals, and it is a very hard, dense, and strong material with excellent corrosion resistance. Tungsten is commonly used in electrical applications, such as light bulb filaments and electrical contacts, as well as in the production of high-speed tool steel, rocket engine nozzles, and X-ray tubes. It is also used as an alloying agent with other metals to improve their properties."
     },
     {
@@ -2620,6 +2680,7 @@
         "yearDiscovered": 1925,
         "casNumber": "CAS7440-15-5",
         "latinName": "Rhenium",
+        "namedAfter": "Latin 'Rhenus' meaning Rhine, as it was discovered by german chemist Walter Noddack, who honored it after Rhein which is importan for german nation.",
         "description": "Rhenium is a silvery-white metal with a very high melting point, making it ideal for use in high-temperature applications. It is a dense and rare element, and is usually obtained as a by-product of molybdenum and copper mining. Rhenium has a variety of industrial uses, including in the production of superalloys for use in turbine blades, electrical contacts, and filaments for mass spectrometers. It is also used in catalysts for the production of high-octane gasoline, and in the manufacture of X-ray tubes."
     },
     {
@@ -2663,6 +2724,7 @@
         "yearDiscovered": 1804,
         "casNumber": "CAS7440-04-2",
         "latinName": "Osmium",
+        "namedAfter": "Greek 'osme' meaning smell, as it forms a volatile oxide.",
         "description": "Osmium is a hard, brittle, bluish-white transition metal that belongs to the platinum group of elements. It is the densest naturally occurring element and has a very high melting point. Osmium is primarily used as an alloying agent in the manufacturing of alloys that are used in electrical contacts and for hardening other metals. It is also used in the production of fountain pen tips, phonograph needles, and electrical contacts. Due to its toxicity and volatility, osmium and its compounds should be handled with caution."
     },
     {
@@ -2706,6 +2768,7 @@
         "yearDiscovered": 1804,
         "casNumber": "CAS7439-88-5",
         "latinName": "Iridium",
+        "namedAfter": "Greek 'iris' meaning rainbow, as it forms a variety of colorful compounds.",
         "description": "Iridium is a dense, silvery-white metal that belongs to the platinum group of elements. It is the second-densest element, after osmium, and has one of the highest melting points of all elements. Iridium is extremely corrosion-resistant and is often used in alloys to improve their strength and durability. It is also used in spark plugs, electrical contacts, and crucibles for growing single crystals. Iridium is relatively rare in the Earth's crust, but is believed to be more abundant in the Earth's core, where it may play a role in the Earth's magnetic field. It is also known for its association with the extinction of the dinosaurs, as it is one of the elements found in the layer of sediment that marks the end of the Cretaceous period."
     },
     {
@@ -2749,6 +2812,7 @@
         "yearDiscovered": 1735,
         "casNumber": "CAS7440-06-4",
         "latinName": "Platinum",
+        "namedAfter": "Spanish 'platina' meaning little silver, as it looks like silver.",
         "description": "Platinum has a silver-white color and is known for its high density, ductility, and resistance to corrosion. Platinum is a valuable material in many applications, including jewelry, electronics, and catalytic converters. It is also used in laboratory equipment, dentistry, and as a currency for investment purposes. The largest producer of platinum is South Africa, with other significant producers including Russia, Canada, and Zimbabwe."
     },
     {
@@ -2792,6 +2856,7 @@
         "yearDiscovered": "2450 BC",
         "casNumber": "CAS7440-57-5",
         "latinName": "Aurum",
+        "namedAfter": "Latin 'aurum' meaning gold, which has Indo-European origins.",
         "description": "Gold is a dense, soft, yellow metal and is one of the least reactive chemical elements, making it highly sought after for use in jewelry, coinage, and other decorative and monetary purposes. Gold is also used in electronics, medicine, and other applications due to its unique properties, such as high conductivity and resistance to corrosion. Gold has been used by humans for thousands of years and holds a special cultural and historical significance. It is often associated with wealth, prosperity, and luxury."
     },
     {
@@ -2835,6 +2900,7 @@
         "yearDiscovered": "2000 BC",
         "casNumber": "CAS7439-97-6",
         "latinName": "Hydrargyrum",
+        "namedAfter": "Greek 'hydrargyros' meaning liquid silver, as it looks like silver. It was named after Roman god Mercury who was the messanger of gods, and element was named after him because it is liquid at room temperature.",
         "description": "Mercury is a dense, silvery-white, highly toxic liquid metal at room temperature and pressure. Mercury has been used for various purposes throughout history, such as in thermometers, barometers, electrical switches, and dental fillings. However, due to its toxicity, its use has been restricted or banned in many countries. When released into the environment, mercury can accumulate in the food chain and cause harm to humans and animals. Proper handling and disposal of mercury-containing products are crucial to prevent environmental contamination."
     },
     {
@@ -2878,6 +2944,7 @@
         "yearDiscovered": 1861,
         "casNumber": "CAS7440-28-0",
         "latinName": "Thallium",
+        "namedAfter": "Greek 'thallos' meaning green twig, as it has green spectral lines.",
         "description": "Thallium  is a soft, silvery-white metal that belongs to the group of post-transition metals. Thallium is highly toxic and has no known biological role, but it has been used in several applications, such as infrared detectors, photoelectric cells, and gamma radiation detection devices. It was also used in the past as a rodenticide and as a treatment for venereal diseases. Thallium has a low melting point and is very malleable, which makes it easy to shape and mold into various forms. It can also react with a variety of other elements to form various compounds."
     },
     {
@@ -2921,6 +2988,7 @@
         "yearDiscovered": "6400 BC",
         "casNumber": "CAS7439-92-1",
         "latinName": "Plumbum",
+        "namedAfter": "Latin 'plumbum' meaning liquid silver, as it looks like silver.",
         "description": "Lead is a dense, soft, and malleable metal that has been used since ancient times. Lead has a bluish-white color when freshly cut, but it tarnishes to a dull grayish color when exposed to air. It is a highly toxic element and has been phased out of many applications due to its harmful effects on health and the environment. Lead is still used in some applications such as batteries, ammunition, and radiation shielding."
     },
     {
@@ -2964,6 +3032,7 @@
         "yearDiscovered": 1753,
         "casNumber": "CAS7440-69-9",
         "latinName": "Bisemutum",
+        "namedAfter": "German 'weisse masse' meaning white mass, as it is white.",
         "description": "Bismuth is a dense, silvery-white metal with a pinkish tint. Bismuth is commonly used in cosmetics, pharmaceuticals, and pigments due to its low toxicity and iridescent properties. It is also used in alloys with other metals, such as lead, tin, and cadmium, to improve their properties. Bismuth has a number of interesting physical properties, including a very low thermal conductivity and a high diamagnetic susceptibility, which makes it repel magnetic fields."
     },
     {
@@ -3007,6 +3076,7 @@
         "yearDiscovered": 1898,
         "casNumber": "CAS7440-08-6",
         "latinName": "Polonium",
+        "namedAfter": "Latin 'Polonia' meaning Poland, as it was discovered by Marie Curie, who named it after Poland.",
         "description": "Polonium is a rare and highly radioactive metal. It has only a few isotopes, and the most common one, polonium-210, is used in various applications such as in antistatic devices, brushes for removing dust from photographic films, and as a heat source in satellites. However, polonium-210 is also highly toxic and can be fatal if ingested or inhaled in sufficient quantities. It has been used as a poison in some high-profile cases."
     },
     {
@@ -3050,6 +3120,7 @@
         "yearDiscovered": 1940,
         "casNumber": "CAS7440-68-8",
         "latinName": "Astatum",
+        "namedAfter": "Greek 'astatos' meaning unstable, as it is highly radioactive.",
         "description": "Astatine is a highly radioactive element. It is extremely rare, with only a few grams present in the Earth's crust at any given time. Due to its short half-life and high radioactivity, astatine has limited uses in scientific research, although it has been studied for its potential as a cancer treatment. Astatine is a halogen, like fluorine and chlorine, and is therefore chemically similar to these elements. Its properties are largely theoretical due to the challenges of working with this highly unstable element."
     },
     {
@@ -3093,6 +3164,7 @@
         "yearDiscovered": 1900,
         "casNumber": "CAS10043-92-2",
         "latinName": "Radon",
+        "namedAfter": "Latin 'radon' meaning ray, as it emits radiation.",
         "description": "Radon is a radioactive, colorless, odorless, and tasteless noble gas. It is formed naturally by the decay of uranium and thorium in soil, rocks, and water. Radon gas can enter homes and buildings through cracks in walls, floors, and foundations, and can accumulate to high levels, which can be a health hazard. Exposure to high levels of radon is the second leading cause of lung cancer, after smoking, and can be mitigated through proper ventilation and remediation measures. Radon is also used in some medical treatments, such as radiation therapy for cancer."
     },
     {
@@ -3136,6 +3208,7 @@
         "yearDiscovered": 1939,
         "casNumber": "CAS7440-73-5",
         "latinName": "Francium",
+        "namedAfter": "France, as it was discovered by Marguerite Perey, who named it after France.",
         "description": "Francium is a highly radioactive and rare chemical element. It belongs to the alkali metal group and is the second rarest naturally occurring element in the Earth's crust, after astatine. Due to its extremely short half-life, all known isotopes of francium are highly unstable and undergo radioactive decay. The most stable isotope, francium-223, has a half-life of only 22 minutes. Francium is used primarily for research purposes, and its chemical and physical properties are not well understood due to its rarity and short half-life."
     },
     {
@@ -3179,6 +3252,7 @@
         "yearDiscovered": 1898,
         "casNumber": "CAS7440-14-4",
         "latinName": "Radium",
+        "namedAfter": "Latin 'radius' meaning ray, as it emits radiation.",
         "description": "Radium is a rare, radioactive metal. It is a silvery-white metal that rapidly tarnishes on contact with air, emitting a pale blue glow as it decays. Its isotopes have a half-life ranging from a few days to thousands of years, and the decay products can release dangerous alpha, beta, and gamma radiation. Radium has been used in various applications, including as a cancer treatment and in luminous paints, but due to its highly toxic nature, its use is now heavily restricted."
     },
     {
@@ -3222,6 +3296,7 @@
         "yearDiscovered": 1961,
         "casNumber": "CAS22537-19-5",
         "latinName": "Lawrencium",
+        "namedAfter": "Ernest Lawrence, inventor of the cyclotron, type of particle accelerator.",
         "description": "Lawrencium is a synthetic chemical element. It is a highly radioactive metal and has only been produced in minute quantities, so its properties are not well characterized. It is believed to be a solid metal and is expected to have properties similar to those of the rare earth elements. Lawrencium has no known biological role and is highly toxic. Due to its rarity and short half-life, it has no practical applications outside of scientific research."
     },
     {
@@ -3265,6 +3340,7 @@
         "yearDiscovered": 1964,
         "casNumber": "CAS53850-36-5",
         "latinName": "Rutherfordium",
+        "namedAfter": "Ernest Rutherford, physicist and chemist, who made significant contribution to nuclear research.",
         "description": "Rutherfordium is a highly radioactive synthetic element It is a member of the transactinide elements, which are the heaviest elements in the periodic table. Because it is so unstable, it has no known uses outside of basic scientific research."
     },
     {
@@ -3308,6 +3384,7 @@
         "yearDiscovered": 1968,
         "casNumber": "CAS53850-35-4",
         "latinName": "Dubnium",
+        "namedAfter": "Dubna, where it was discovered.",
         "description": "Dubnium is a synthetic chemical element. It is highly radioactive and has only been produced in the laboratory. Its properties are not well known, but it is believed to be a solid metal at room temperature and to belong to the transition metals in the periodic table. Dubnium has no known biological role and is primarily of scientific interest."
     },
     {
@@ -3351,6 +3428,7 @@
         "yearDiscovered": 1974,
         "casNumber": "CAS54038-81-2",
         "latinName": "Seaborgium",
+        "namedAfter": "Glenn T. Seaborg, chemist, who made significant contribution to nuclear research.",
         "description": "Seaborgium is a synthetic chemical element. It is a highly radioactive, man-made element and belongs to the transactinide series. Seaborgium's most stable isotope has a half-life of just over four minutes, and its properties are largely unknown due to its short half-life and the minuscule amounts in which it has been produced."
     },
     {
@@ -3394,6 +3472,7 @@
         "yearDiscovered": 1981,
         "casNumber": "CAS54037-14-8",
         "latinName": "Bohrium",
+        "namedAfter": "Niels Bohr, physicist, who made significant contribution to nuclear research.",
         "description": "Bohrium is a synthetic element. It is a highly radioactive metal and is classified as a transition metal. Its properties and potential uses are not well understood due to the difficulty in producing and handling the element in large enough quantities for experimental analysis."
     },
     {
@@ -3437,6 +3516,7 @@
         "yearDiscovered": 1984,
         "casNumber": "CAS54037-57-9",
         "latinName": "Hassium",
+        "namedAfter": "Hesse country in Germany, where it was discovered.",
         "description": "Hassium is a synthetic element. It is highly unstable and radioactive, and has only been produced in small quantities in laboratories. Its most stable isotope, hassium-277, has a half-life of only about 11 seconds. Hassium has no known uses outside of basic scientific research."
     },
     {
@@ -3480,6 +3560,7 @@
         "yearDiscovered": 1982,
         "casNumber": "CAS54038-01-6",
         "latinName": "Meitnerium",
+        "namedAfter": "Lise Meitner, physicist, who made significant contribution to nuclear research.",
         "description": "Meitnerium is a synthetic element and a highly radioactive metal. It is a silvery-white metal that is highly reactive, and has a very short half-life, meaning it quickly decays into other elements. Due to its instability, very little is known about the properties of meitnerium."
     },
     {
@@ -3523,6 +3604,7 @@
         "yearDiscovered": 1994,
         "casNumber": "CAS54083-77-1",
         "latinName": "Darmstadtium",
+        "namedAfter": "Darmstadt, where it was discovered.",
         "description": "Darmstadtium is a synthetic chemical element. It is a highly radioactive element with a very short half-life, making it difficult to study. Its properties are not well known, but it is believed to be a dense, metallic element that is similar to other group 10 elements such as nickel, palladium, and platinum."
     },
     {
@@ -3566,6 +3648,7 @@
         "yearDiscovered": 1994,
         "casNumber": "CAS54386-24-2",
         "latinName": "Roentgenium",
+        "namedAfter": "Wilhelm Conrad Röntgen, physicist, who discovered X-rays.",
         "description": "Roentgenium is a synthetic chemical element. It is highly unstable, and its most stable isotope has a half-life of only about 3.6 seconds. Due to its extreme rarity and short half-life, roentgenium has no known uses outside of scientific research. Its properties and behavior are largely theoretical, but it is believed to be a heavy, highly reactive metal that would be difficult to isolate and handle in any significant quantity."
     },
     {
@@ -3609,6 +3692,7 @@
         "yearDiscovered": 1996,
         "casNumber": "CAS54084-26-3",
         "latinName": "Copernecium",
+        "namedAfter": "Nicolaus Copernicus, astronomer, who formulated the heliocentric model of the universe.",
         "description": "Copernicium is a synthetic element. Its most stable isotope, Copernicium-285, has a half-life of approximately 29 seconds. Copernicium is classified as a transactinide element and is expected to have properties similar to those of zinc, cadmium, and mercury. Due to its high radioactivity and short half-life, there are no practical applications for Copernicium at this time, and much of what is known about the element comes from scientific studies of its chemical and physical properties."
     },
     {
@@ -3652,6 +3736,7 @@
         "yearDiscovered": 2004,
         "casNumber": "CAS54084-70-7",
         "latinName": "Nihonium",
+        "namedAfter": "Japan, where it was discovered.",
         "description": "Nihonium is a synthetic element. It is a highly unstable element, and only a few atoms of it have ever been produced. Its physical and chemical properties are not well known, but it is believed to be a metal and to have similar properties to thallium and lead."
     },
     {
@@ -3695,6 +3780,7 @@
         "yearDiscovered": 1998,
         "casNumber": "CAS54085-16-4",
         "latinName": "Flerovium",
+        "namedAfter": "Georgiy Flerov, physicist, who made significant contribution to nuclear research.",
         "description": "Flerovium is a synthetic chemical element. It is a highly radioactive and unstable element that belongs to the group of transuranium elements. It is currently not used for any practical applications, as its properties and behavior are not yet fully understood due to its short half-life and limited availability. Nonetheless, its synthesis and study have contributed to a better understanding of nuclear physics and the behavior of heavy and superheavy elements."
     },
     {
@@ -3738,6 +3824,7 @@
         "yearDiscovered": 2003,
         "casNumber": "CAS54085-64-2",
         "latinName": "Moscovium",
+        "namedAfter": "Moscow Oblast, where it was discovered.",
         "description": "Moscovium is a synthetic chemical element. It is a highly radioactive element that is not found naturally on Earth. It is a member of the group 15 elements in the periodic table and is expected to have properties similar to those of its lighter homologues nitrogen, phosphorus, arsenic, antimony, and bismuth. Due to its short half-life and small amounts produced, moscovium's properties and potential applications are still being studied."
     },
     {
@@ -3781,6 +3868,7 @@
         "yearDiscovered": 2000,
         "casNumber": "CAS54100-71-9",
         "latinName": "Livermorium",
+        "namedAfter": "Lawrence Livermore National Laboratory, which collaborated with JINR on its synthesis.",
         "description": "Livermorium is a synthetic element. It is a highly unstable and radioactive element that is not found naturally on Earth. It is a member of the p-block elements and belongs to the group 16 elements, also known as the chalcogens. Its properties are not well studied due to its short half-life and the difficulty of producing large enough amounts for experimentation. Currently, livermorium has no known uses outside of basic scientific research."
     },
     {
@@ -3824,6 +3912,7 @@
         "yearDiscovered": 2010,
         "casNumber": "CAS87658-56-8",
         "latinName": "Tennessine",
+        "namedAfter": "Tennessee, where it was discovered.",
         "description": "Tennessine is a synthetic, radioactive element. Ше is a member of the halogen group on the periodic table, and it is predicted to have properties similar to those of its lighter homologues, iodine, and astatine. Due to its high radioactivity and short half-life, tennessine has no known biological role and is primarily studied for its fundamental chemical and nuclear properties."
     },
     {
@@ -3867,6 +3956,7 @@
         "yearDiscovered": 2002,
         "casNumber": "CAS54144-19-3",
         "latinName": "Oganneson",
+        "namedAfter": "Yuri Oganessian, physicist, who made significant contribution to nuclear research and discovered this element.",
         "description": "Oganessonis a synthetic and highly radioactive chemical element. It is classified as a noble gas and is the heaviest element currently known, and a very short half-life of about 0.89 milliseconds. Due to its high atomic number, it is also expected to have some unique and interesting properties, such as being more stable than other superheavy elements."
     },
     {
@@ -3910,6 +4000,7 @@
         "yearDiscovered": 1839,
         "casNumber": "CAS7439-91-0",
         "latinName": "Lanthanum",
+        "namedAfter": "Greek word lanthanein, which means to lie hidden, as it was difficult to extract.",
         "description": "Lanthanum is a soft, silvery-white metal that belongs to the group of elements known as the lanthanides. Lanthanum is a relatively reactive element and is found in small amounts in many minerals such as monazite and bastnasite. It has a wide range of applications including the production of high-refractive-index glass, hybrid car batteries, catalysts, and lighting applications. Lanthanum also has some medical uses, such as in X-ray imaging and as a component in bone cement."
     },
     {
@@ -3953,6 +4044,7 @@
         "yearDiscovered": 1803,
         "casNumber": "CAS7440-45-1",
         "latinName": "Cerium",
+        "namedAfter": "Planet Ceres, which was discovered two years before cerium.",
         "description": "Cerium is a soft, silvery-white metal that belongs to the lanthanide series of elements. Cerium is the most abundant of the rare earth elements and has many uses in industry, including in catalytic converters for automobiles, glass polishing, and in the production of stainless steel. Cerium is also used in the manufacture of lighter flints and in the production of arc lamps, which are used in film and television production. In addition, cerium has potential applications in medicine, particularly for the treatment of certain types of cancer."
     },
     {
@@ -3996,6 +4088,7 @@
         "yearDiscovered": 1885,
         "casNumber": "CAS7440-10-0",
         "latinName": "Praseodymium",
+        "namedAfter": "Greek word 'prasios', which means green, and 'didymos', which means twin, as it was mistaken for neodymium.",
         "description": "Praseodymium is a soft, silvery metal that belongs to the rare earth elements group of the periodic table. Praseodymium is commonly used as an alloying agent in metals such as magnesium to improve their strength and corrosion resistance. It is also used in ceramic capacitors, lasers, and as a yellow pigment in glass and ceramics. Praseodymium has no known biological role, but its compounds can be toxic if ingested."
     },
     {
@@ -4039,6 +4132,7 @@
         "yearDiscovered": 1885,
         "casNumber": "CAS7440-00-8",
         "latinName": "Neodymium",
+        "namedAfter": "Greek word 'neos', which means new, and 'didymos', which means twin, as it was mistaken for praseodymium.",
         "description": "Neodymium is a soft, silvery metal that belongs to the lanthanide series of elements. Neodymium is the third most abundant element of the lanthanide series, and it is widely used in various applications such as magnets, lasers, and lighting. Neodymium magnets are some of the strongest permanent magnets known, and they are used in various applications such as electric motors, generators, and headphones. Neodymium is also used in lasers and as a colorant for glass and ceramics. Its compounds have applications in catalysis, agriculture, and medicine."
     },
     {
@@ -4082,6 +4176,7 @@
         "yearDiscovered": 1945,
         "casNumber": "CAS7440-12-2",
         "latinName": "Promethium",
+        "namedAfter": "Prometheus, who stole fire from the gods of Olympus, as it was discovered with radioactive isotopes, that emits light.",
         "description": "Promethium is a rare, radioactive, and synthetic element. It is one of the lanthanides. Promethium is obtained through the nuclear fission of uranium or the neutron activation of naturally occurring europium. It is a soft, silvery-white metal that is chemically similar to other lanthanides, but has unique properties due to its radioactivity. Promethium has no stable isotopes and all of its isotopes are radioactive, with the most stable having a half-life of only 17.7 years. Because of its radioactivity, promethium has few practical applications, but it has been used in the development of nuclear batteries, as a source of beta radiation in medical research, and in the production of luminous paints."
     },
     {
@@ -4125,6 +4220,7 @@
         "yearDiscovered": 1879,
         "casNumber": "CAS7440-19-9",
         "latinName": "Samarium",
+        "namedAfter": "Samarskite, a mineral from which it was first isolated.",
         "description": "Samarium is a silvery-white metal that is relatively stable in air and water. Samarium has a relatively high melting point and is used in various applications, such as in the production of permanent magnets, nuclear reactors, and electronic components. It is also used as a neutron absorber in control rods for nuclear reactors and in samarium-cobalt magnets, which are highly resistant to demagnetization and are used in a variety of industrial applications. Samarium has several isotopes, some of which are radioactive, and it is found in minerals such as monazite and bastnasite."
     },
     {
@@ -4168,6 +4264,7 @@
         "yearDiscovered": 1901,
         "casNumber": "CAS7440-53-1",
         "latinName": "Europium",
+        "namedAfter": "Europe, where it was discovered.",
         "description": "Europium is a rare earth metal. It is silvery-white in color and has a hardness similar to lead. Europium is used in the production of phosphors, which are materials that emit light when stimulated by electrons. It is also used in the production of lasers, in nuclear reactors, and in the manufacture of steel and other alloys. Europium is a relatively rare element, and is found in small quantities in the Earth's crust."
     },
     {
@@ -4211,6 +4308,7 @@
         "yearDiscovered": 1886,
         "casNumber": "CAS7440-54-2",
         "latinName": "Gadolinium",
+        "namedAfter": "Johan Gadolin, chemist, physicist, and mineralogist.",
         "description": "Gadolinium is a silvery-white, ductile, and malleable rare earth metal. Gadolinium is primarily used as a contrast agent in magnetic resonance imaging (MRI) due to its unique magnetic properties. It also has applications in nuclear reactors, electronic devices, and microwave filters. Gadolinium has several isotopes, some of which are used for neutron capture in nuclear medicine and radiation therapy. It is relatively stable in air and water but can react with acids and dissolve in dilute acids."
     },
     {
@@ -4254,6 +4352,7 @@
         "yearDiscovered": 1843,
         "casNumber": "CAS7440-27-9",
         "latinName": "Terbium",
+        "namedAfter": "Ytterby, a town in Sweden, as it was isolated from ytterby.",
         "description": "Terbium is a rare earth element. It is a silvery-white, ductile metal that is malleable, paramagnetic, and soft enough to be cut with a knife. Terbium is used to dope calcium fluoride crystals, which are used in lasers and as X-ray imaging devices. It is also used in phosphors for color television tubes and in certain alloys. Additionally, terbium has some potential applications in medicine, such as in magnetic resonance imaging (MRI) contrast agents."
     },
     {
@@ -4297,6 +4396,7 @@
         "yearDiscovered": 1886,
         "casNumber": "CAS7429-91-6",
         "latinName": "Dysprosium",
+        "namedAfter": "Greek word 'dysprositos', which means hard to get, as it was difficult to separate from other elements.",
         "description": "Dysprosium is a rare earth element. It is a silvery-white metal that is relatively stable in air, but slowly oxidizes in water. Dysprosium has a high magnetic susceptibility, making it useful in the production of powerful magnets used in many modern technologies. It also has important uses in the nuclear industry, as it can be used as a nuclear reactor control rod. Dysprosium compounds have a range of other applications, including as catalysts, phosphors, and in glass manufacturing. It is relatively rare and is primarily mined in China, although deposits have been found in other countries as well."
     },
     {
@@ -4340,6 +4440,7 @@
         "yearDiscovered": 1878,
         "casNumber": "CAS7440-60-0",
         "latinName": "Holmium",
+        "namedAfter": "Holmia, the Latin name for Stockholm, where it was discovered.",
         "description": "Holmium is a rare earth element, and one of the heaviest elements in the lanthanide series. It has a silvery-white metallic appearance and is relatively soft and malleable. It is found in some minerals, but is typically produced through the extraction and purification of other rare earth elements. Holmium has a variety of uses, including in nuclear reactors, lasers, and certain types of glass and ceramics. Its magnetic properties also make it useful in magnetic resonance imaging (MRI) machines. Holmium is not known to be toxic to humans, but its compounds should still be handled with care."
     },
     {
@@ -4383,6 +4484,7 @@
         "yearDiscovered": 1842,
         "casNumber": "CAS7440-52-0",
         "latinName": "Erbium",
+        "namedAfter": "Ytterby, a town in Sweden, as it was isolated from ytterbium.",
         "description": "Erbium is a soft, silvery-white metal that belongs to the lanthanide series of the periodic table. Erbium is relatively stable in air and reacts slowly with water, but it does react with most acids and with halogens. It has some unusual magnetic properties, including a large magnetic moment and a high magnetic ordering temperature. Erbium is commonly used as a dopant in optical fiber amplifiers, which are used in telecommunications to amplify optical signals. It is also used in nuclear technology, metallurgy, and other industries."
     },
     {
@@ -4426,6 +4528,7 @@
         "yearDiscovered": 1879,
         "casNumber": "CAS7440-30-4",
         "latinName": "Thulium",
+        "namedAfter": "Thule, the ancient name for Scandinavia, as it was discovered, by a Swedish chemist.",
         "description": "Thulium is a rare and highly crystalline silvery-gray metal that belongs to the lanthanide series. Thulium is the least abundant of the naturally occurring lanthanides, and it is found in small quantities in minerals such as monazite and gadolinite. It has a relatively low melting point and can be easily shaped and formed. Thulium is used in some medical applications, such as radiation therapy and nuclear medicine. It is also used as a dopant in fiber optic amplifiers and in high-temperature superconductors."
     },
     {
@@ -4469,6 +4572,7 @@
         "yearDiscovered": 1878,
         "casNumber": "CAS7440-64-4",
         "latinName": "Ytterbium",
+        "namedAfter": "Ytterby, a town in Sweden, as it was isolated from mineral ytterbite, found in Ytterby.",
         "description": "Ytterbium is a soft, silvery-white metal that belongs to the lanthanide series of elements. Ytterbium is one of the least abundant rare-earth metals, and it is often found in the same minerals as other rare-earth elements. Ytterbium has some unique properties that make it useful in various applications. It is a good thermal neutron absorber and has been used as a radiation source in portable X-ray machines and in atomic clocks. Ytterbium is also used in the production of stainless steel and as a dopant in fiber optic amplifiers for communication networks. Additionally, ytterbium has potential medical applications, such as in cancer treatment and bone imaging."
     },
     {
@@ -4512,6 +4616,7 @@
         "yearDiscovered": 1899,
         "casNumber": "CAS7440-34-8",
         "latinName": "Actinium",
+        "namedAfter": "Greek word 'aktinos', which means ray, as it was discovered from the radioactivity of uranium.",
         "description": "Actinium is a radioactive silvery-white metal that is found in small amounts in uranium ores. Actinium glows in the dark due to the emission of high-energy particles from its decay process. Actinium has few practical applications, but it is used in some scientific research and medical treatments, particularly in cancer therapy."
     },
     {
@@ -4555,6 +4660,7 @@
         "yearDiscovered": 1828,
         "casNumber": "CAS7440-29-1",
         "latinName": "Thorium",
+        "namedAfter": "Thor, the Scandinavian god of thunder, as it is powerful and strong.",
         "description": "Thorium is a naturally occurring silvery-white metal that is slightly radioactive and is the element in the actinide series. It is one of the least reactive metals and is commonly found in small amounts in rocks and soils. Thorium is used in the production of nuclear energy and is being researched as a potential fuel for nuclear reactors due to its abundance and low radioactivity. It also has applications in the production of magnesium alloys and as a source of light for gas mantles in camping lanterns."
     },
     {
@@ -4598,6 +4704,7 @@
         "yearDiscovered": 1918,
         "casNumber": "CAS7440-13-3",
         "latinName": "Protactinium",
+        "namedAfter": "Greek word 'protos', which means first, as it is early precursor of actinium.",
         "description": "Protactinium is a rare and highly radioactive metal with a silvery-gray appearance. It is a member of the actinide series of elements. Was the first artificially produced member of the actinide series. Protactinium has no stable isotopes and has a half-life of about 32,000 years, decaying into uranium-233 through beta decay. It is primarily used for scientific research, particularly in nuclear physics and radiochemistry."
     },
     {
@@ -4641,6 +4748,7 @@
         "yearDiscovered": 1789,
         "casNumber": "CAS7440-61-1",
         "latinName": "Uranium",
+        "namedAfter": "Uranus, the seventh planet in the Solar System, as it was discovered soon after the planet.",
         "description": "Uranium is a silvery-grey metal in the actinide series. Uranium is weakly radioactive, with a half-life of about 4.5 billion years, making it one of the most long-lived radioactive elements. It is commonly used as a nuclear fuel for generating electricity and as a component in nuclear weapons. Natural uranium consists of three isotopes: uranium-238, uranium-235, and uranium-234. Uranium-235 is the most important isotope for nuclear power and weapons, as it is fissile, meaning it can be split by neutrons and release energy."
     },
     {
@@ -4684,6 +4792,7 @@
         "yearDiscovered": 1940,
         "casNumber": "CAS7439-99-8",
         "latinName": "Neptunium",
+        "namedAfter": "Neptune, the eighth planet in the Solar System, as it was discovered soon after the planet.",
         "description": "Neptunium is a radioactive metallic element. It is a member of the actinide series of elements. Neptunium is a silvery metal that tarnishes when exposed to air, and it has no known stable isotopes. It has several radioactive isotopes, with Np-237 being the most stable, having a half-life of 2.14 million years. Neptunium is mainly used for research purposes and in the production of plutonium-238, which is used in spacecraft power sources. Due to its radioactivity, neptunium has no commercial applications."
     },
     {
@@ -4727,6 +4836,7 @@
         "yearDiscovered": 1940,
         "casNumber": "CAS7440-07-5",
         "latinName": "Plutonium",
+        "namedAfter": "Pluto, the ninth planet in the Solar System, as it was discovered soon after the planet.",
         "description": "Plutonium is a highly radioactive, silvery-white metal that belongs to the actinide series of elements. Plutonium is primarily used in nuclear reactors and nuclear weapons, due to its ability to sustain a nuclear chain reaction. It is produced by irradiating natural uranium with neutrons, and it can also be created synthetically. Plutonium-239 is the most common isotope of plutonium, and it has a half-life of 24,110 years. Due to its radioactivity, plutonium can pose a significant health hazard if not handled properly."
     },
     {
@@ -4770,6 +4880,7 @@
         "yearDiscovered": 1944,
         "casNumber": "CAS7440-35-9",
         "latinName": "Americium",
+        "namedAfter": "Americas, as it was first synthesized on the continent.",
         "description": "Americium is a radioactive metallic element and is part of the actinide series. Americium is a synthetic element that does not exist naturally on Earth, and most of its isotopes are radioactive with short half-lives. It has a silvery-white appearance and can accumulate in the bones, making it a potential health hazard. Americium is primarily used in scientific research and in the manufacture of smoke detectors."
     },
     {
@@ -4813,6 +4924,7 @@
         "yearDiscovered": 1944,
         "casNumber": "CAS7440-51-9",
         "latinName": "Curium",
+        "namedAfter": "Pierre Curie and Marie Curie, French physicists and chemists, who made a significant contribution to radioactivity research.",
         "description": "Curium is a synthetic chemical element . It is a radioactive metal, and one of the transuranium elements, meaning it has an atomic number greater than that of uranium. Curium has a silvery-white appearance and is highly radioactive, emitting alpha particles and some gamma rays. It is primarily used in research and has no practical applications outside of scientific study."
     },
     {
@@ -4856,6 +4968,7 @@
         "yearDiscovered": 1949,
         "casNumber": "CAS7440-40-6",
         "latinName": "Berkelium",
+        "namedAfter": "Berkeley, California, where it was discovered.",
         "description": "Berkelium is a radioactive chemical element. It is a silvery-white, rare earth metal. It is a synthetic element and does not occur naturally on Earth. Berkelium is produced by bombarding heavier elements with neutrons in a nuclear reactor or particle accelerator. Berkelium is highly radioactive and has no commercial or biological applications due to its rarity and toxicity. Its isotopes have important uses in nuclear research and nuclear weapons development."
     },
     {
@@ -4899,6 +5012,7 @@
         "yearDiscovered": 1950,
         "casNumber": "CAS7440-71-3",
         "latinName": "Californium",
+        "namedAfter": "California, where it was discovered.",
         "description": "Californium is a radioactive. It is a man-made element that can only be produced in nuclear reactors or particle accelerators and has no known natural occurrence. Californium has a very short half-life, which means that it is highly radioactive and decays quickly, emitting alpha particles and other forms of radiation. It has a variety of applications in nuclear science, including in neutron radiography, cancer treatment, and oil well logging. Due to its scarcity and high cost, Californium is mainly used for scientific research and not widely used outside of research labs."
     },
     {
@@ -4942,6 +5056,7 @@
         "yearDiscovered": 1952,
         "casNumber": "CAS7429-92-7",
         "latinName": "Einsteinium",
+        "namedAfter": "Albert Einstein, physicist, who made significant contributions to the theory of relativity and quantum mechanics.",
         "description": "Einsteinium is a synthetic radioactive chemical element and is a member of the actinide series of elements and is the seventh transuranic element. Its most stable isotope has a half-life of only 471 days, making it highly radioactive and difficult to study. Einsteinium has no known uses outside of basic scientific research due to its rarity and radioactivity."
     },
     {
@@ -4985,6 +5100,7 @@
         "yearDiscovered": 1952,
         "casNumber": "CAS7440-72-4",
         "latinName": "Fermium",
+        "namedAfter": "Enrico Fermi, physicist, who made significant contributions to the development of nuclear energy.",
         "description": "Fermium is a synthetic element and a highly unstable element and its isotopes have very short half-lives, meaning that it is not found in nature and can only be produced artificially. Due to its rarity and the difficulty of producing it, fermium has very few practical applications and is primarily used in scientific research to study the properties of heavy elements."
     },
     {
@@ -5028,6 +5144,7 @@
         "yearDiscovered": 1955,
         "casNumber": "CAS7440-11-1",
         "latinName": "Mendelevium",
+        "namedAfter": "Dmitri Mendeleev, chemist, who developed the periodic table of elements.",
         "description": "Mendelevium is a synthetic element and is highly radioactive and unstable, with no stable isotopes. Mendelevium has a very short half-life, making it difficult to study and limiting its practical applications. It has primarily been used for research purposes in the study of nuclear physics and chemistry."
     },
     {
@@ -5071,6 +5188,7 @@
         "yearDiscovered": 1965,
         "casNumber": "CAS10028-14-5",
         "latinName": "Nobelium",
+        "namedAfter": "Alfred Nobel, chemist, engineer, inventor, businessman, and philanthropist.",
         "description": "Nobelium is a highly radioactive synthetic element. It is a member of the actinide series. It is produced by bombarding lighter elements with charged particles, and its isotopes have very short half-lives. Due to its high radioactivity and short half-life, there are no practical applications for nobelium outside of scientific research."
     }
 ]

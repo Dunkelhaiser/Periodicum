@@ -65,6 +65,7 @@
         "latin_name": "Latin name",
         "year_of_discovery": "Year of discovery",
         "discovered_by": "Discovered by",
+        "named_after": "Named after",
         "cas_number": "CAS number",
         "description": "Description",
         "g_mol": "g/mol",

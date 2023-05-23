@@ -39,5 +39,6 @@ export interface Element {
     yearDiscovered: number;
     casNumber: string;
     latinName: string;
+    namedAfter: string;
     description: string;
 }

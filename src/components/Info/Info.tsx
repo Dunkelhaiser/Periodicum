@@ -142,6 +142,7 @@ const Info: React.FC<ModalProps> = ({ isShowing, modalRef }) => {
                 <Data label={t("info.latin_name")} value={elementData?.latinName} />
                 <Data label={t("info.year_of_discovery")} value={elementData?.yearDiscovered} />
                 <Data label={t("info.discovered_by")} value={elementData?.discoveredBy} />
+                <Data label={t("info.named_after")} value={elementData?.namedAfter} />
                 <Data label={t("info.cas_number")} value={elementData?.casNumber} />
                 <Data label={t("info.description")} value={elementData?.description} />
             </div>

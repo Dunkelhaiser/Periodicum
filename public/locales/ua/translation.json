@@ -65,6 +65,7 @@
         "latin_name": "Латинська назва",
         "year_of_discovery": "Рік відкриття",
         "discovered_by": "Відкривач",
+        "named_after": "Названий на честь",
         "cas_number": "Номер CAS",
         "description": "Опис",
         "g_mol": "г/моль",

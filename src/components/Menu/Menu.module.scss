@@ -4,6 +4,7 @@
     @include flex($direction: column-reverse, $gap: 2rem, $align: center, $justify: flex-start);
 
     position: fixed;
+    z-index: 999;
     right: 2rem;
     bottom: 1rem;
 
@@ -35,8 +36,12 @@
     @include flex($align: stretch, $justify: space-between, $gap: 0.45rem);
 
     cursor: pointer;
+
     width: 32px;
     height: 26px;
+
+    background: transparent;
+    border: none;
 }
 
 .line {

@@ -1,3 +1,4 @@
+import { useSearchParams } from "react-router-dom";
 import { faReact } from "@fortawesome/free-brands-svg-icons";
 import { faAtom, faEarthEurope, faMagnet } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
@@ -7,8 +8,8 @@ import { useTranslation } from "react-i18next";
 import { ElementContext } from "../../context/ElementContext";
 import { LanguageContext } from "../../context/LanguageContext";
 import { formatValue } from "../../utilities/utilities";
-import ModalWindow from "../ModalWindow/ModalWindow";
-import S from "./Info.module.scss";
+import Modal from "../Modal/Modal";
+import Styles from "./ElementInfo.module.scss";
 
 interface Props {
     label: string;
@@ -20,11 +21,13 @@ interface Props {
 const Data: React.FC<Props> = ({ label, value, unit, capitalize = true }) => {
     const nullValue = !value && value !== 0;
     const formattedValue = nullValue ? "---" : formatValue(value);
-    const formattedUnit = unit && !nullValue && <span className={S.unit}>{unit === "%" || unit.includes("°") ? unit : ` ${unit}`}</span>;
+    const formattedUnit = unit && !nullValue && (
+        <span className={Styles.unit}>{unit === "%" || unit.includes("°") ? unit : ` ${unit}`}</span>
+    );
     return (
-        <div className={S.data}>
-            <p className={`${S.property} ${nullValue ? S.null : ""}`}>{label}</p>
-            <p className={`${S.value} ${nullValue ? S.null : ""} ${!capitalize ? S.unit : ""}`}>
+        <div className={Styles.data}>
+            <p className={`${Styles.property} ${nullValue ? Styles.null : ""}`}>{label}</p>
+            <p className={`${Styles.value} ${nullValue ? Styles.null : ""} ${!capitalize ? Styles.unit : ""}`}>
                 {formattedValue}
                 {formattedUnit}
             </p>
@@ -32,23 +35,17 @@ const Data: React.FC<Props> = ({ label, value, unit, capitalize = true }) => {
     );
 };
 
-interface ModalProps {
-    isShowing: boolean;
-    modalRef: React.RefObject<HTMLDivElement>;
-}
-
-const Info: React.FC<ModalProps> = ({ isShowing, modalRef }) => {
+const ElementInfo: React.FC = () => {
+    const [searchParams, setSearchParams] = useSearchParams();
     const { element, setElement } = useContext(ElementContext);
     const { data } = useContext(LanguageContext);
     const { t } = useTranslation();
 
     useEffect(() => {
-        if (!isShowing) {
-            setElement("");
-        }
-    }, [isShowing]);
+        if (searchParams.get("element")) setElement(searchParams.get("element") as string);
+    }, []);
 
-    const elementData = data.find((el) => el.symbol === element);
+    const elementData = data.find((el) => el.symbol.toLowerCase() === element.toLowerCase());
 
     const getCategoryColor = (category?: string) => {
         switch (category) {
@@ -78,20 +75,26 @@ const Info: React.FC<ModalProps> = ({ isShowing, modalRef }) => {
     };
 
     return (
-        <ModalWindow show={isShowing} modalRef={modalRef}>
-            <div className={S.heading}>
-                <h2 className={S.header}>
-                    {elementData?.name} <span className={S.symbol}>( {elementData?.symbol} )</span>
+        <Modal
+            onClose={() => {
+                setElement("");
+                setSearchParams("");
+            }}
+            params="element"
+        >
+            <div className={Styles.heading}>
+                <h2 className={Styles.header}>
+                    {elementData?.name} <span className={Styles.symbol}>( {elementData?.symbol} )</span>
                 </h2>
-                <div className={S.badges}>
-                    <span className={S.badge} style={{ backgroundColor: getCategoryColor(elementData?.category) }}>
+                <div className={Styles.badges}>
+                    <span className={Styles.badge} style={{ backgroundColor: getCategoryColor(elementData?.category) }}>
                         {elementData?.category}
                     </span>
-                    {elementData?.radioactive && <span className={S.radioactive}>{t("info.radioactive")}</span>}
+                    {elementData?.radioactive && <span className={Styles.radioactive}>{t("info.radioactive")}</span>}
                 </div>
             </div>
-            <div className={S.section}>
-                <h3 className={S.title} style={{ backgroundColor: "var(--noble-gas)" }}>
+            <div className={Styles.section}>
+                <h3 className={Styles.title} style={{ backgroundColor: "var(--noble-gas)" }}>
                     <FontAwesomeIcon icon={faAtom} /> {t("info.atomic_properties")}
                 </h3>
                 <Data label={t("info.atomic_number")} value={elementData?.atomicNumber} />
@@ -114,8 +117,8 @@ const Info: React.FC<ModalProps> = ({ isShowing, modalRef }) => {
                 <Data label={t("info.electron_configuration")} value={elementData?.electronConfiguration} />
                 <Data label={t("info.electron_configuration_semantic")} value={elementData?.electronConfigurationSemantic} />
             </div>
-            <div className={S.section}>
-                <h3 className={S.title} style={{ backgroundColor: "var(--alkali-metal)" }}>
+            <div className={Styles.section}>
+                <h3 className={Styles.title} style={{ backgroundColor: "var(--alkali-metal)" }}>
                     <FontAwesomeIcon icon={faMagnet} /> {t("info.electromagnetic_properties")}
                 </h3>
                 <Data label={t("info.electronegativity")} value={elementData?.electronegativity} />
@@ -125,8 +128,8 @@ const Info: React.FC<ModalProps> = ({ isShowing, modalRef }) => {
                 <Data label={t("info.resistivity")} value={elementData?.resistivity} unit={t("info.ohm_m")} />
                 <Data label={t("info.superconducting_point")} value={elementData?.superconductingPoint} unit="°C" />
             </div>
-            <div className={S.section}>
-                <h3 className={S.title} style={{ backgroundColor: "var(--lanthanide)" }}>
+            <div className={Styles.section}>
+                <h3 className={Styles.title} style={{ backgroundColor: "var(--lanthanide)" }}>
                     <FontAwesomeIcon icon={faEarthEurope} /> {t("info.abundance")}
                 </h3>
                 <Data label={t("info.universe")} value={elementData?.abundanceUniverse} unit="%" />
@@ -135,8 +138,8 @@ const Info: React.FC<ModalProps> = ({ isShowing, modalRef }) => {
                 <Data label={t("info.oceans")} value={elementData?.abundanceOceans} unit="%" />
                 <Data label={t("info.human_body")} value={elementData?.abundanceHumans} unit="%" />
             </div>
-            <div className={S.section}>
-                <h3 className={S.title} style={{ backgroundColor: "var(--post-transition-metal)" }}>
+            <div className={Styles.section}>
+                <h3 className={Styles.title} style={{ backgroundColor: "var(--post-transition-metal)" }}>
                     <FontAwesomeIcon icon={faReact} /> {t("info.overview")}
                 </h3>
                 <Data label={t("info.latin_name")} value={elementData?.latinName} />
@@ -146,7 +149,7 @@ const Info: React.FC<ModalProps> = ({ isShowing, modalRef }) => {
                 <Data label={t("info.cas_number")} value={elementData?.casNumber} />
                 <Data label={t("info.description")} value={elementData?.description} />
             </div>
-        </ModalWindow>
+        </Modal>
     );
 };
-export default Info;
+export default ElementInfo;

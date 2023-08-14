@@ -1,22 +1,26 @@
 @use "../../scss/abstract/mixins" as *;
 @use "../../scss/abstract/screen-queries" as *;
 
-.modal_window {
-    position: fixed;
-    z-index: 9999;
-    top: 0;
-    right: 0;
-    left: 0;
-
+.modal {
     overflow: auto;
+    display: block;
 
     width: 50%;
     max-height: calc(100% - 2 * 3.125rem);
     margin: 3.125rem auto;
     padding: 2rem 3rem;
 
+    color: var(--text);
+
     background-color: var(--foreground);
+    border: none;
     border-radius: 0.3125rem;
+    outline: none;
+
+    &::backdrop {
+        background: rgb(0 0 0 / 70%);
+        backdrop-filter: blur(0.05rem);
+    }
 
     @media ($tablet) {
         width: 75%;

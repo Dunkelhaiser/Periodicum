@@ -1,17 +1,16 @@
 import { useContext } from "react";
 import { createPortal } from "react-dom";
+import { useSearchParams } from "react-router-dom";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faMoon, faSun, faLanguage } from "@fortawesome/free-solid-svg-icons";
 import { ThemeContext } from "../../context/ThemeContext";
 import useToggle from "../../hooks/useToggle";
 import Styles from "./Menu.module.scss";
-import useModal from "../ModalWindow/useModal";
-import LanguageSwitcher from "../LanguageSwitcher/LanguageSwitcher";
 
 const Menu: React.FC = () => {
     const [expanded, setExpanded] = useToggle(false);
+    const [, setSearchParams] = useSearchParams();
     const { theme, setThemeHandler } = useContext(ThemeContext);
-    const { isShowing, showModal, modalRef } = useModal();
 
     return (
         <>
@@ -37,7 +36,9 @@ const Menu: React.FC = () => {
                         <li>
                             <button
                                 type="button"
-                                onClick={showModal}
+                                onClick={() => {
+                                    setSearchParams("languages=true");
+                                }}
                                 className={Styles.button}
                                 aria-label="Change Language"
                                 tabIndex={expanded ? 0 : -1}
@@ -49,8 +50,6 @@ const Menu: React.FC = () => {
                 </div>,
                 document.querySelector("#overlays") as HTMLDivElement
             )}
-
-            <LanguageSwitcher isShowing={isShowing} modalRef={modalRef} />
         </>
     );
 };

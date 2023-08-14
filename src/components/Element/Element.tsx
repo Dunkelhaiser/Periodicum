@@ -1,4 +1,5 @@
 import { useContext } from "react";
+import { Link } from "react-router-dom";
 import { ElementContext } from "../../context/ElementContext";
 import { handleKeyDown } from "../../utilities/utilities";
 import S from "./Element.module.scss";
@@ -18,7 +19,8 @@ const Element: React.FC<Props> = ({ name, symbol, number, atomicMass, color = "p
 
     return (
         // eslint-disable-next-line jsx-a11y/interactive-supports-focus
-        <div
+        <Link
+            to={`/?element=${symbol.toLowerCase()}`}
             className={`${S.element_wrapper} ${S[color]} ${element === symbol ? S.active : ""} ${disabled ? S.disabled : ""}`}
             tabIndex={disabled ? undefined : 0}
             role="button"
@@ -34,7 +36,7 @@ const Element: React.FC<Props> = ({ name, symbol, number, atomicMass, color = "p
                 <span className={S.name}>{name}</span>
                 <span className={S.mass}>{Math.round(atomicMass * 1e3) / 1e3}</span>
             </div>
-        </div>
+        </Link>
     );
 };
 export default Element;

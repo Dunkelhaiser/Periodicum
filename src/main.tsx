@@ -2,7 +2,6 @@ import React from "react";
 import ReactDOM from "react-dom/client";
 import { createBrowserRouter, createRoutesFromElements, Route, RouterProvider } from "react-router-dom";
 import App from "./App";
-import ElementContextProvider from "./context/ElementContext";
 import LanguageContextProvider from "./context/LanguageContext";
 import OptionsContextProvider from "./context/OptionsContext";
 import ThemeContextProvider from "./context/ThemeContext";
@@ -21,9 +20,7 @@ ReactDOM.createRoot(document.getElementById("root") as HTMLElement).render(
         <ThemeContextProvider>
             <LanguageContextProvider>
                 <OptionsContextProvider>
-                    <ElementContextProvider>
-                        <RouterProvider router={router} />
-                    </ElementContextProvider>
+                    <RouterProvider router={router} />
                 </OptionsContextProvider>
             </LanguageContextProvider>
         </ThemeContextProvider>

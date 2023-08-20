@@ -3,13 +3,11 @@ import { useTranslation } from "react-i18next";
 import TableStyles from "./Table.module.scss";
 import Element from "../Element/Element";
 import { OptionsContext } from "../../context/OptionsContext";
-import { ElementContext } from "../../context/ElementContext";
 import Filters from "../Filters/Filters";
 import { LanguageContext } from "../../context/LanguageContext";
 
 const Table: React.FC = () => {
     const { filter } = useContext(OptionsContext);
-    const { element: globalElement, setElement } = useContext(ElementContext);
     const { data } = useContext(LanguageContext);
     const { t } = useTranslation();
 
@@ -46,9 +44,6 @@ const Table: React.FC = () => {
                         (element.atomicNumber < 57 || element.atomicNumber >= 71) &&
                         (element.atomicNumber < 89 || element.atomicNumber >= 103) && (
                             <Element
-                                onClick={() => {
-                                    setElement(globalElement === element.symbol ? "" : element.symbol);
-                                }}
                                 key={element.atomicNumber}
                                 symbol={element.symbol}
                                 name={element.name}
@@ -65,9 +60,6 @@ const Table: React.FC = () => {
                             ((element.atomicNumber >= 57 && element.atomicNumber <= 70) ||
                                 (element.atomicNumber >= 89 && element.atomicNumber <= 102)) && (
                                 <Element
-                                    onClick={() => {
-                                        setElement(globalElement === element.symbol ? "" : element.symbol);
-                                    }}
                                     key={element.atomicNumber}
                                     symbol={element.symbol}
                                     name={element.name}

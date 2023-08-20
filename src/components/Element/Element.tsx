@@ -1,6 +1,4 @@
-import { useContext } from "react";
-import { Link } from "react-router-dom";
-import { ElementContext } from "../../context/ElementContext";
+import { Link, useSearchParams } from "react-router-dom";
 import { handleKeyDown } from "../../utilities/utilities";
 import S from "./Element.module.scss";
 
@@ -15,16 +13,18 @@ interface Props {
 }
 
 const Element: React.FC<Props> = ({ name, symbol, number, atomicMass, color = "p", disabled, onClick }) => {
-    const { element } = useContext(ElementContext);
+    const [searchParams] = useSearchParams();
+
+    const isSelected = searchParams.get("element")?.toLowerCase() === symbol?.toLowerCase();
 
     return (
         // eslint-disable-next-line jsx-a11y/interactive-supports-focus
         <Link
-            to={`/?element=${symbol.toLowerCase()}`}
-            className={`${S.element_wrapper} ${S[color]} ${element === symbol ? S.active : ""} ${disabled ? S.disabled : ""}`}
+            to={`?element=${symbol.toLowerCase()}`}
+            className={`${S.element_wrapper} ${S[color]} ${isSelected ? S.active : ""} ${disabled ? S.disabled : ""}`}
             tabIndex={disabled ? undefined : 0}
             role="button"
-            aria-pressed={element === symbol}
+            aria-pressed={isSelected}
             onClick={onClick}
             onKeyDown={(e) => handleKeyDown(e, onClick)}
         >

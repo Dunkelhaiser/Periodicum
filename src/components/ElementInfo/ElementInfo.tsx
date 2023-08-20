@@ -3,9 +3,8 @@ import { faReact } from "@fortawesome/free-brands-svg-icons";
 import { faAtom, faEarthEurope, faMagnet } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { DefaultTFuncReturn } from "i18next";
-import { useContext, useEffect } from "react";
+import { useContext } from "react";
 import { useTranslation } from "react-i18next";
-import { ElementContext } from "../../context/ElementContext";
 import { LanguageContext } from "../../context/LanguageContext";
 import { formatValue } from "../../utilities/utilities";
 import Modal from "../Modal/Modal";
@@ -37,15 +36,10 @@ const Data: React.FC<Props> = ({ label, value, unit, capitalize = true }) => {
 
 const ElementInfo: React.FC = () => {
     const [searchParams, setSearchParams] = useSearchParams();
-    const { element, setElement } = useContext(ElementContext);
     const { data } = useContext(LanguageContext);
     const { t } = useTranslation();
 
-    useEffect(() => {
-        if (searchParams.get("element")) setElement(searchParams.get("element") as string);
-    }, []);
-
-    const elementData = data.find((el) => el.symbol.toLowerCase() === element.toLowerCase());
+    const elementData = data.find((el) => el.symbol.toLowerCase() === searchParams.get("element")?.toLowerCase());
 
     const getCategoryColor = (category?: string) => {
         switch (category) {
@@ -75,13 +69,7 @@ const ElementInfo: React.FC = () => {
     };
 
     return (
-        <Modal
-            onClose={() => {
-                setElement("");
-                setSearchParams("");
-            }}
-            params="element"
-        >
+        <Modal onClose={() => setSearchParams("")} params="element">
             <div className={Styles.heading}>
                 <h2 className={Styles.header}>
                     {elementData?.name} <span className={Styles.symbol}>( {elementData?.symbol} )</span>

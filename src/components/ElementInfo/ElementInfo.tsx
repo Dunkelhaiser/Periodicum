@@ -68,6 +68,10 @@ const ElementInfo: React.FC = () => {
         }
     };
 
+    if (!elementData) {
+        return null;
+    }
+
     return (
         <Modal onClose={() => setSearchParams("")} params="element">
             <div className={Styles.heading}>

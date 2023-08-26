@@ -18,12 +18,10 @@ const Modal: React.FC<Props> = ({ children, onClose, params, query }) => {
 
     useEffect(() => {
         if (showModal) ref.current?.showModal();
-        else ref.current?.close();
     }, [showModal]);
 
     const closeModal = () => {
         onClose?.();
-        ref.current?.close();
     };
 
     return createPortal(

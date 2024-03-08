@@ -2,7 +2,7 @@
 
 This is an interactive periodic table application. In it you can click on elements to obtain detailed information about each element. It features dark and light modes and supports both English and Ukrainian languages.
 
-### [Live App](https://periodicum.netlify.app/)
+### [Live App](https://periodicum.pages.dev/)
 
 ## Table of contents
 
@@ -28,7 +28,7 @@ This is an interactive periodic table application. In it you can click on elemen
 
 -   Interactive periodic table with clickable elements
 -   Detailed information about each element
--   Dark and light mode for different visual preferences
+-   Dark and light modes for different visual preferences
 -   English and Ukrainian language support
 
 ### Technologies Used
@@ -52,4 +52,4 @@ This is an interactive periodic table application. In it you can click on elemen
 
 ## Author
 
--   GitHub - [@KaeserOfHonour](https://github.com/KaeserOfHonour)
+-   GitHub - [@Dunkelhaiser](https://github.com/Dunkelhaiser)
